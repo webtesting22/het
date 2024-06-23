@@ -1,0 +1,57 @@
+#HeroSection {
+    position: relative;
+    width: 100%;
+    padding-top: 50vh;
+    /* Adjust this value to position the h1 initially in the middle */
+}
+
+.MainTitle {
+    width: 100%;
+    text-align: center;
+    /* background: white; */
+    color: white;
+    transition: font-size 0.3s ease-out;
+    z-index: 10;
+    position: sticky;
+}
+
+.MainTitle h1 {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+    /* transition: .5s; */
+}
+
+.sticky h1 {
+    /* transition: .5s; */
+    color: white;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+}
+
+.sticky {
+    position: sticky;
+
+    top: 0;
+    width: 100%;
+    padding-top: 0;
+    /* Remove padding when sticky */
+}
+.overlayImageContainer{
+    background-image: url("https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.blackOverlay{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.737);
+}
+.AboutUsContainer{
+    margin-top: 22rem;
+}

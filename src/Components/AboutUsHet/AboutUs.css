@@ -1,0 +1,44 @@
+.aboutUsContainer p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    /* font-family: sans-serif; */
+}
+
+.images img {
+    width: 100%;
+}
+
+.images img:nth-child(1) {
+    position: absolute;
+    width: 40%;
+    top: 0%;
+}
+
+.images img:nth-child(2) {
+    position: absolute;
+    width: 28%;
+    right: 0px;
+    top: 30%;
+}
+
+.images img:nth-child(3) {
+    position: absolute;
+    width: 20%;
+    right: 28%;
+    margin-top: 100px;
+}
+
+.images img:nth-child(4) {
+    position: absolute;
+    width: 20%;
+    left: 22%;
+    margin-top: 50%;
+}
+.floatsImageContainer{
+    margin-top: 7rem;
+    position: relative;
+}
+.images{
+    position: relative;
+}

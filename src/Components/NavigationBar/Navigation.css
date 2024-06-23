@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.navigation>div {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation>div ul {
+    display: flex;
+}
+
+.navigation>div ul li {
+    margin: 0px 10px;
+}
