@@ -25,6 +25,10 @@ const AboutUsHet = () => {
             <div className="container" >
                 <div className="aboutUsContainer">
                     <p>Het Graphics, Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
+                    <div className="BtnContainer">
+                        <button className="BtnStyle">Contact</button>
+                        <button className="BtnStyle_transparent">More About Company <i class='bx bx-right-arrow-alt'></i></button>
+                    </div>
                 </div>
                 <div className="section-padding"></div>
                 <div className="floatsImageContainer">
