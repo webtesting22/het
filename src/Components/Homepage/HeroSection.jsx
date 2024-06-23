@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import AboutUsHet from "../AboutUsHet/AboutUsHet";
+import Inventories from "../InventoriesProducts/Inventories";
 const HeroSection = () => {
     const [fontSize, setFontSize] = useState("7rem");
     const [isSticky, setIsSticky] = useState(false);
@@ -46,6 +47,10 @@ const HeroSection = () => {
                 <section className="AboutUsContainer">
                     <AboutUsHet />
                 </section>
+                <div className="section-padding"></div>
+                {/* <section id="HetGraphicsInventories">
+                    <Inventories />
+                </section> */}
                 {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
             </section>
         </>
