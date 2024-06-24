@@ -2,9 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import AboutUsHet from "../AboutUsHet/AboutUsHet";
 import Inventories from "../InventoriesProducts/Inventories";
+import { Button, Modal } from 'antd';
 const HeroSection = () => {
     const [fontSize, setFontSize] = useState("7rem");
     const [isSticky, setIsSticky] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
+
+
+    useEffect(() => {
+        if (!isModalOpen) {
+            window.location.reload(); // Reload the page when the modal is closed initially
+        } else {
+            setIsModalOpen(true); // Set isModalOpen to true after the page reloads
+        }
+    }, [isModalOpen]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,6 +46,8 @@ const HeroSection = () => {
 
     return (
         <>
+
+            
             <section id="HeroSection">
                 <div className="overlayImageContainer">
                     <div className="blackOverlay">
@@ -42,6 +56,7 @@ const HeroSection = () => {
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
                     <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "10px" }}>HET GRAPHICS</h1>
+
                 </div>
                 {/* <div className="section-padding"></div> */}
                 <section className="AboutUsContainer">
