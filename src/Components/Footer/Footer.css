@@ -47,11 +47,20 @@
 .copyrightText p {
     text-align: start;
     color: white;
+    display: flex;
+    align-items: center;
 }
+
 
 .copyrightText p a {
     color: white;
 }
 .copyrightText p i{
     rotate: -45deg;
+    transition: .5s;
+}
+.copyrightText p:hover i {
+    rotate: -45deg;
+    transform: translateX(5px);
+    transition: .5s;
 }
