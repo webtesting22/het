@@ -3,6 +3,7 @@ import "./HeroSection.css";
 import AboutUsHet from "../AboutUsHet/AboutUsHet";
 import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
+import Founder from "../Founders/Founders";
 const HeroSection = () => {
     const [fontSize, setFontSize] = useState("7rem");
     const [isSticky, setIsSticky] = useState(false);
@@ -47,7 +48,7 @@ const HeroSection = () => {
     return (
         <>
 
-            
+
             <section id="HeroSection">
                 <div className="overlayImageContainer">
                     <div className="blackOverlay">
@@ -65,6 +66,9 @@ const HeroSection = () => {
                 <div className="section-padding"></div>
                 <section id="HetGraphicsInventories">
                     <Inventories />
+                </section>
+                <section>
+                    <Founder />
                 </section>
                 {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
             </section>

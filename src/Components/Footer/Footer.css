@@ -52,3 +52,6 @@
 .copyrightText p a {
     color: white;
 }
+.copyrightText p i{
+    rotate: -45deg;
+}

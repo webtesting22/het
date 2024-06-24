@@ -83,7 +83,7 @@ const Inventories = () => {
                     {BillBoardsContent.map((item, index) => (
                         <div key={index} className="InventoriesTypesContainer">
                             <div className="InventoriesImageContainer">
-                            <Image src={item.Image} alt="" />
+                                <Image src={item.Image} alt="" />
                             </div>
                             <h1>{item.Title}</h1>
                         </div>
