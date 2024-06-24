@@ -4,6 +4,7 @@ const AboutUsHet = () => {
     useEffect(() => {
         const handleScroll = () => {
             const images = document.querySelectorAll(".parallax-image");
+            const headings = document.querySelectorAll(".heading");
             const scrollY = window.scrollY;
             images.forEach((image, index) => {
                 let factor = 0.1; // Default parallax factor
@@ -12,6 +13,15 @@ const AboutUsHet = () => {
                 }
                 image.style.transform = `translateY(${scrollY * factor}px)`;
             });
+            headings.forEach((heading, index) => {
+                const offset = window.innerHeight * (index + 1) - scrollY - 200;
+                if (offset > 0 && offset < window.innerHeight) {
+                    heading.style.transform = `translateX(${200 - offset}px)`;
+                } else {
+                    heading.style.transform = `translateX(200px)`; // Reset to start position
+                }
+            }); 
+            
         };
 
         window.addEventListener("scroll", handleScroll);

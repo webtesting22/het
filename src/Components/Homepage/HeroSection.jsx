@@ -48,9 +48,9 @@ const HeroSection = () => {
                     <AboutUsHet />
                 </section>
                 <div className="section-padding"></div>
-                {/* <section id="HetGraphicsInventories">
+                <section id="HetGraphicsInventories">
                     <Inventories />
-                </section> */}
+                </section>
                 {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
             </section>
         </>

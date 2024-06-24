@@ -25,7 +25,7 @@
 .images img:nth-child(3) {
     position: absolute;
     width: 20%;
-    right: 28%;
+    right: 32%;
     margin-top: 50px;
 }
 
@@ -47,4 +47,21 @@
     margin: 40px 0px;
     display: flex;
     justify-content: center;
+}
+
+@media (min-width:1300px) and (max-width:3000px){
+    .aboutUsContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .aboutUsContainer p {
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        /* font-family: sans-serif; */
+    }
+    
 }

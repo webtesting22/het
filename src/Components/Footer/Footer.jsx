@@ -6,7 +6,7 @@ const Footer = () => {
             <section id="Footer">
                 <div className="SocialIcons">
                     <div>
-                        <div>Instragm <i class='bx bx-right-arrow-alt'></i></div>
+                        <div>Instagram <i class='bx bx-right-arrow-alt'></i></div>
                         <div>Google <i class='bx bx-right-arrow-alt'></i></div>
                         <div>Facebook <i class='bx bx-right-arrow-alt'></i></div>
                     </div>
