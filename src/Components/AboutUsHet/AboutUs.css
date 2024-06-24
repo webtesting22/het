@@ -32,29 +32,33 @@
 .images img:nth-child(4) {
     position: absolute;
     width: 20%;
-    left: 22%;
+    right: 6%;
     margin-top: 50%;
 }
-.floatsImageContainer{
+
+.floatsImageContainer {
     /* margin-top: 7rem; */
     position: relative;
     height: 170vh;
 }
-.images{
+
+.images {
     position: relative;
 }
-.BtnContainer{
+
+.BtnContainer {
     margin: 40px 0px;
     display: flex;
     justify-content: center;
 }
 
-@media (min-width:1300px) and (max-width:3000px){
-    .aboutUsContainer{
+@media (min-width:1300px) and (max-width:3000px) {
+    .aboutUsContainer {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+
     .aboutUsContainer p {
         font-size: 2rem;
         color: white;
@@ -63,5 +67,5 @@
         margin: auto;
         /* font-family: sans-serif; */
     }
-    
+
 }

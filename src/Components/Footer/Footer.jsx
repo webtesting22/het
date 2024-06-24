@@ -27,7 +27,7 @@ const Footer = () => {
                         data-aos-delay="300"
                         data-aos-offset="0">HET GRAPHICS</h1>
                     <div className="copyrightText">
-                        <p>©2024. <a href="https://www.outleadsolutions.com/">&nbsp;Outlead Solutions</a><i class='bx bx-right-arrow-alt'></i></p>
+                        <p>©2024. <a href="https://www.outleadsolutions.com/" target="_blank">&nbsp;Outlead Solutions</a><i class='bx bx-right-arrow-alt'></i></p>
                     </div>
                 </div>
             </section>

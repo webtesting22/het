@@ -14,9 +14,9 @@ const Founder = () => {
         {
             founderTitle: "Asit Shah",
         },
-        {
-            founderTitle: "Pranay Shah",
-        },
+        // {
+        //     founderTitle: "Pranay Shah",
+        // },
 
     ]
 
@@ -25,7 +25,7 @@ const Founder = () => {
             <section className="FounderContainer container">
                 <Row>
                     <Col lg={12} md={24}>
-                        <h4 className="FounderTitle">Meet <br /> Founders</h4>
+                        <h4 className="FounderTitle">Meet <br /> Founder</h4>
                     </Col>
                     <Col lg={12} md={24}>
                         <div className="FoundersContainerCards">
