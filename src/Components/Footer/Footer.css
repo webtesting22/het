@@ -1,34 +1,54 @@
-#Footer{
+#Footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
+    padding-bottom: 2rem;
 }
-#Footer h1{
+
+#Footer h1 {
     font-size: 10rem;
     color: white;
 }
-.SocialIcons{
+
+.SocialIcons {
     display: flex;
     width: 100%;
     justify-content: end;
 }
-.SocialIcons>div{
+
+.SocialIcons>div {
     display: flex;
     margin-right: 50px;
 }
-.SocialIcons>div div{
+
+.SocialIcons>div div {
     margin: 0px 20px;
     cursor: pointer;
 }
-.SocialIcons>div div i{
+
+.SocialIcons>div div i {
     rotate: -45deg;
     transition: .5s;
 }
-.SocialIcons>div div:hover i{
+
+.SocialIcons>div div:hover i {
     rotate: -45deg;
     transform: translateX(5px);
     transition: .5s;
-   
+
+}
+
+.copyrightText {
+    width: 100%;
+}
+
+.copyrightText p {
+    text-align: start;
+    color: white;
+}
+
+.copyrightText p a {
+    color: white;
 }

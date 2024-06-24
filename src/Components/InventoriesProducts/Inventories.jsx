@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./Inventories.css";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import GantryImages from "./Images/gantry.jpeg"
 import cantilever from "./Images/cantilever2.png"
@@ -9,7 +8,17 @@ import polekiosk from "./Images/polekiosk.jpeg"
 import unipole from "./Images/unipole.jpeg"
 import LED from "./Images/LED.png"
 import { Image } from 'antd';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Inventories = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duration of the animation in milliseconds
+            easing: 'ease-in-out', // Easing function for the animation
+            once: true // Whether the animation should only happen once
+            // Add more options as needed
+        });
+    }, []);
     const BillBoardsContent = [
         {
             Image: GantryImages,
@@ -65,7 +74,7 @@ const Inventories = () => {
     return (
         <>
             <section id="InventoriesContainer">
-                <h1 id="InventoriesHeading">Inventories Types</h1>
+                <h1 id="InventoriesHeading" data-aos="fade-up">Inventories Types</h1>
                 <div className="section-padding"></div>
                 <div className="BillBoardsTypes">
                     <div className="dash">
