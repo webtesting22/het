@@ -52,9 +52,9 @@ const Founder = () => {
     return (
         <>
             <div id="Founders">
-                <Modal title="Asit Shah" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
+                <Modal title="Asit Shah" width={800} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
                     {selectedFounder && selectedFounder.Descriptions.map((desc, index) => (
-                        <p key={index} style={{marginBottom:"20px"}}>{desc}</p>
+                        <p key={index} style={{marginBottom:"20px",fontSize:"18px"}}>{desc}</p>
                     ))}
                 </Modal>
 
