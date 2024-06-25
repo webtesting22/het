@@ -5,7 +5,7 @@ import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
 import Founder from "../Founders/Founders";
 const HeroSection = () => {
-    const [fontSize, setFontSize] = useState("7rem");
+    const [fontSize, setFontSize] = useState("5rem");
     const [isSticky, setIsSticky] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(true);
 
@@ -26,7 +26,7 @@ const HeroSection = () => {
             const sectionHeight = section.offsetHeight;
             const sectionTop = section.offsetTop;
             const maxScroll = 500; // Adjust this value to control the scroll effect
-            const newFontSize = Math.max(2, 7 - (scrollY / maxScroll) * 9); // Calculates the new font size
+            const newFontSize = Math.max(2, 5 - (scrollY / maxScroll) * 9); // Calculates the new font size
 
             setFontSize(`${newFontSize}rem`);
 
@@ -60,7 +60,7 @@ const HeroSection = () => {
 
                 </div>
                 {/* <div className="section-padding"></div> */}
-                <section className="AboutUsContainer">
+                <section className="AboutUsContainer" id="AboutUsContainer">
                     <AboutUsHet />
                 </section>
                 <div className="section-padding"></div>

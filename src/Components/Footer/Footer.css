@@ -64,3 +64,10 @@
     transform: translateX(5px);
     transition: .5s;
 }
+
+@media (max-width:769px){
+    #Footer h1 {
+        font-size: 3rem;
+        color: white;
+    }
+}

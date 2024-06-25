@@ -73,6 +73,15 @@ const Inventories = () => {
 
     return (
         <>
+            {/* <div className="container hetContent">
+                <p>
+                    Het Graphics started its business in the outdoor media industry in the year 2000 and is known for its innovations and ideas in the industry. We started our journey by introducing Pole Kiosks in the city of Ahmedabad. Currently, we provide several billboard media options such as Gantries, Unipoles, large-format Hoardings, Cantilevers, Pole Kiosks and LEDs.
+                </p>
+                <br /><br />
+                <p>
+                    With 99% of our media being backlit and 100% of them located in the most premium and high-traffic locations of Ahmedabad city, we are the leading outdoor media provider with 400+ media inventory options. Our web of billboards is spread throughout Ahmedabad city. Our media inventory can be found in cluster-free zones and is visible at direct eye level making it inescapable to notice while commuting.
+                </p>
+            </div> */}
             <section id="InventoriesContainer">
                 <h1 id="InventoriesHeading" data-aos="fade-up">Inventories Types</h1>
                 <div className="section-padding"></div>

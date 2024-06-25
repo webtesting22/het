@@ -95,3 +95,10 @@ ul {
     padding: 0rem 6rem;
   }
 }
+
+@media (max-width:769px){
+  .container {
+    padding: 0rem 1rem;
+  }
+  
+}

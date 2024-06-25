@@ -4,7 +4,7 @@ const Navigation = () => {
 
     const Links = [
         {
-            link: "AboutUs"
+            link: "AboutUs",
         },
         {
             link: "Work"
