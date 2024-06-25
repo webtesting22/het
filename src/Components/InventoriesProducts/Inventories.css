@@ -71,6 +71,10 @@
 }
 
 @media (max-width:769px){
+    #InventoriesContainer {
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+    }
     .InventoriesTypesContainer {
         width: 100%;
         margin: 0 auto;
@@ -84,8 +88,15 @@
         font-weight: 300;
         position: sticky;
         top: 40%;
-        margin-bottom: 30vh;
+        margin-bottom: 0;
         z-index: -1;
     }
-    
+    .InventoriesTypesContainer h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        position: sticky;
+    }
 }

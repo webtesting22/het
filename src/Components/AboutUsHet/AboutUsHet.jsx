@@ -11,6 +11,10 @@ import AnimatedImage8 from "./Images/het7.png"
 
 const AboutUsHet = () => {
     useEffect(() => {
+        const isPC = () => {
+            return window.innerWidth >= 1024; // Assuming PC screens are wider than 1024px
+        };
+
         const handleScroll = () => {
             const images = document.querySelectorAll(".parallax-image");
             const headings = document.querySelectorAll(".heading");
@@ -30,13 +34,16 @@ const AboutUsHet = () => {
                     heading.style.transform = `translateX(200px)`; // Reset to start position
                 }
             });
-
         };
 
-        window.addEventListener("scroll", handleScroll);
+        if (isPC()) {
+            window.addEventListener("scroll", handleScroll);
+        }
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            if (isPC()) {
+                window.removeEventListener("scroll", handleScroll);
+            }
         };
     }, []);
     return (
