@@ -1,18 +1,23 @@
 import React from "react";
 import "./Navigation.css"
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from 'react-scroll';
 const Navigation = () => {
 
     const Links = [
         {
             link: "AboutUs",
+            id: "AboutUsContainer"
         },
         {
-            link: "Gallery"
+            link: "Gallery",
+            id: "AboutUsContainer"
         },
         {
-            link: "Inventories"
-        },
-      
+            link: "Inventories",
+            id: "HetGraphicsInventories"
+        }
+
 
     ]
 
@@ -23,15 +28,23 @@ const Navigation = () => {
                 <div className="navigation">
                     <div>
                         {/* <span>hello</span> */}
-                        <a href="mailto:sales@yellowspot.in" style={{color:"white"}}><span>sales@yellowspot.in</span></a>
+                        <a href="mailto:sales@yellowspot.in" style={{ color: "white" }}><span>sales@yellowspot.in</span></a>
                     </div>
                     <div></div>
                     <div id="Navigationbtn">
                         <ul>
                             {Links.map((item, index) => (
-                                <li key={index}>
-                                    {item.link}
-                                </li>
+                                <ScrollLink
+                                    key={index}
+                                    to={item.id}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-170}
+                                >
+                                    <li>
+                                        {item.link}
+                                    </li>
+                                </ScrollLink>
                             ))}
                             <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">YelloSpot</button></a>
                         </ul>
