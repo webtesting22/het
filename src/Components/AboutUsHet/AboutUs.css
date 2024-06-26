@@ -1,7 +1,7 @@
 .aboutUsContainer p {
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     /* font-family: sans-serif; */
 }
 
@@ -142,9 +142,9 @@
     }
 
     .aboutUsContainer p {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
-        text-align: center;
+        /* text-align: center; */
         width: 70%;
         margin: auto;
         /* font-family: sans-serif; */
@@ -203,6 +203,34 @@
         /* right: 3%; */
     }
 
+    .images img:nth-child(8) {
+        position: static;
+        width: 100%;
+        margin-top: 0%;
+        /* right: 3%; */
+    }
+    
+    .images img:nth-child(9) {
+        position: static;
+        width: 100%;
+        margin-top: 0%;
+        /* right: 3%; */
+    }
+    
+    .images img:nth-child(10) {
+        position: static;
+        width: 100%;
+        margin-top: 0%;
+        /* right: 3%; */
+    }
+    
+    .images img:nth-child(11) {
+        position: static;
+        width: 100%;
+        margin-top: 0%;
+    
+        /* right: 3%; */
+    }
     .images img:nth-child(4) {
         position: static;
         width: 100%;
@@ -231,6 +259,8 @@
 
 .ParaBackEdit p {
     color: black;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #BackgroundImage {

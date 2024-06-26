@@ -59,6 +59,16 @@ const AboutUsHet = () => {
 
                         <p>Het Graphics, Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
                         <br />
+                        <p>
+                            Het Graphics started its business in the outdoor media industry in the year 2000 and is known for its innovations and ideas in the industry. We started our journey by introducing Pole Kiosks in the city of Ahmedabad. Currently, we provide several billboard media options such as Gantries, Unipoles, large-format Hoardings, Cantilevers, Pole Kiosks and LEDs.</p>
+                        <br />
+                        <p> With 99% of our media being backlit and 100% of them located in the most premium and high-traffic locations of Ahmedabad city, we are the leading outdoor media provider with 400+ media inventory options. Our web of billboards is spread throughout Ahmedabad city. Our media inventory can be found in cluster-free zones and is visible at direct eye level making it inescapable to notice while commuting.</p>
+                        <br />
+                        <p>  Het Graphics has been successfully providing a one-stop solution in outdoor advertising to all its local, national and international clientele. With our strong media planning team, we have accomplished multiple successful outdoor campaigns throughout the state of Gujarat.</p>
+                        <br />
+                        <p>   Currently, we deal with all our clientele through our subsidiary company Yellow Spot. YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of Gujarat's most formidable outdoor media houses. Find out more about us on Yellow Spot (link).</p>
+
+
                         <br />
                         <br />
                     </div>
