@@ -59,7 +59,7 @@ ul {
   color: rgb(255, 255, 255);
   padding: 15px 30px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 237, 0);
   font-size: 1.7rem;
   transition: .5s;
 }

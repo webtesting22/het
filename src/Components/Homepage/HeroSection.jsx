@@ -56,7 +56,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "10px" }}>HET GRAPHICS</h1>
+                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px",paddingBottom:"13px" }}>HET GRAPHICS</h1>
 
                 </div>
                 {/* <div className="section-padding"></div> */}
@@ -70,6 +70,7 @@ const HeroSection = () => {
                 <section>
                     <Founder />
                 </section>
+                <hr  style={{border:"1px solid #ffed00", opacity:"1",marginBottom:"4rem"}}/>
                 {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
             </section>
         </>

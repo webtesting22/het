@@ -52,9 +52,9 @@ const Founder = () => {
     return (
         <>
             <div id="Founders">
-                <Modal title="Asit Shah" width={800} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
+                <Modal title="Asit Shah" width={1000} open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
                     {selectedFounder && selectedFounder.Descriptions.map((desc, index) => (
-                        <p key={index} style={{marginBottom:"20px",fontSize:"18px"}}>{desc}</p>
+                        <p key={index} style={{ marginBottom: "20px", fontSize: "16px" }}>{desc}</p>
                     ))}
                 </Modal>
 
@@ -68,11 +68,15 @@ const Founder = () => {
                                 {FounderDetails.map((item, index) => (
                                     <div key={index} className="FounderCard" data-aos="fade-up"
                                         data-aos-duration={(index + 1) * 800}>
-                                        <h4>{item.founderTitle}</h4>
+                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                            <h4>{item.founderTitle}</h4>
+                                            <i class='bx bxl-linkedin socialIcons' ></i>
+                                        </div>
                                         <p>{truncateText(item.Descriptions[0], 30)}</p>
                                         <button className="viewMoreBtn" onClick={() => showModal(item)}>
                                             Read More
                                         </button>
+
                                     </div>
                                 ))}
                             </div>

@@ -30,7 +30,7 @@
 
 .sticky {
     position: sticky;
-
+backdrop-filter: blur(10px);
     top: 0;
     width: 100%;
     padding-top: 0;
@@ -54,4 +54,5 @@
 }
 .AboutUsContainer{
     margin-top: 50vh;
+    margin-bottom: 4rem;
 }

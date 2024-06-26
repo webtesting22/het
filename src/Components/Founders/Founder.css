@@ -1,10 +1,11 @@
 .FounderContainer {
-    margin: 5rem 0rem;
+    margin: 4rem 0rem;
 }
 
 .FoundersContainerCards {
     display: flex;
     justify-content: center;
+
 }
 
 .FounderCard {
@@ -13,6 +14,7 @@
     margin: 20px;
     padding: 30px;
     border-radius: 20px;
+    border: 1px solid #ffed00;
 }
 
 .FounderCard h4 {
@@ -57,7 +59,7 @@
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 237, 0);
     font-size: 1rem;
     transition: .5s;
     cursor: pointer;
@@ -66,6 +68,7 @@
 .ant-modal-content {
     background-color: black !important;
     color: white !important;
+    border: 1px solid rgb(255, 237, 0) !important;
 }
 
 .ant-modal-title {
@@ -77,7 +80,7 @@
     color: white !important;
 }
 
-@media (max-width: 769px){
+@media (max-width: 769px) {
     .FounderCard {
         width: 100%;
         background-color: rgb(21, 21, 21);
@@ -85,6 +88,7 @@
         padding: 20px;
         border-radius: 20px;
     }
+
     .viewMoreBtn {
         border-radius: 10px;
         border: none;
@@ -97,5 +101,16 @@
         cursor: pointer;
         width: 100%;
     }
-    
+
+}
+
+.socialIcons {
+    font-size: 20px;
+    /* background-color: white; */
+    border: 1px solid rgb(255, 237, 0) ;
+    padding: 0px 10px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
 }

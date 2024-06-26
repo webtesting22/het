@@ -8,7 +8,11 @@ import AnimatedImage5 from "./Images/het3.png"
 import AnimatedImage6 from "./Images/het4.png"
 import AnimatedImage7 from "./Images/het5.png"
 import AnimatedImage8 from "./Images/het7.png"
-
+import AnimatedImage9 from "./Images/het8.png"
+import AnimatedImage10 from "./Images/het9.png"
+import AnimatedImage11 from "./Images/het10.png"
+import billboard from "./billboard gif (4).gif"
+// import billboard from "./try.gif"
 const AboutUsHet = () => {
     useEffect(() => {
         const isPC = () => {
@@ -48,29 +52,48 @@ const AboutUsHet = () => {
     }, []);
     return (
         <>
-            <div className="container" >
+            <div>
                 <div className="aboutUsContainer">
-                    <p>Het Graphics, Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
-                    <br />
-                    <p>Find out more about us let's Connect YelloSpot</p>
-                    <div className="BtnContainer">
-                        <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">Connect</button></a>
-                        {/* <button className="BtnStyle_transparent">More About Company <i class='bx bx-right-arrow-alt'></i></button> */}
+                    <div className="container">
+
+
+                        <p>Het Graphics, Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
+                        <br />
+                        <br />
+                        <br />
+                    </div>
+                    <div className="ParaBackEdit">
+                        <p>Find out more about our subsidiary company and book your first inventory now!</p>
+                        <div className="BtnContainer">
+                            <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">YellowSpot</button></a>
+                            {/* <button className="BtnStyle_transparent">More About Company <i class='bx bx-right-arrow-alt'></i></button> */}
+                        </div>
+                    </div>
+
+                </div>
+                <div className="container" >
+                    <div id="BackgroundImage">
+                        <img src={billboard} alt="" />
+                    </div>
+                    <div className="section-padding"></div>
+                    <div className="floatsImageContainer">
+                        <div className="images">
+                            <img src={AnimatedImage1} alt="" className="parallax-image" />
+                            <img src={AnimatedImage2} alt="" className="parallax-image" />
+                            <img src={AnimatedImage3} alt="" className="parallax-image" />
+                            <img src={AnimatedImage4} alt="" className="parallax-image" />
+                            <img src={AnimatedImage5} alt="" className="parallax-image" />
+                            <img src={AnimatedImage6} alt="" className="parallax-image" />
+                            <img src={AnimatedImage7} alt="" className="parallax-image" />
+                            <img src={AnimatedImage8} alt="" className="parallax-image" />
+                            <img src={AnimatedImage9} alt="" className="parallax-image" />
+                            <img src={AnimatedImage10} alt="" className="parallax-image" />
+                            <img src={AnimatedImage11} alt="" className="parallax-image" />
+                            {/* <img src={AnimatedImage1} alt="" className="parallax-image" /> */}
+                        </div>
                     </div>
                 </div>
-                <div className="section-padding"></div>
-                <div className="floatsImageContainer">
-                    <div className="images">
-                        <img src={AnimatedImage1} alt="" className="parallax-image" />
-                        <img src={AnimatedImage2} alt="" className="parallax-image" />
-                        <img src={AnimatedImage3} alt="" className="parallax-image" />
-                        <img src={AnimatedImage4} alt="" className="parallax-image" />
-                        <img src={AnimatedImage5} alt="" className="parallax-image" />
-                        <img src={AnimatedImage6} alt="" className="parallax-image" />
-                        <img src={AnimatedImage7} alt="" className="parallax-image" />
-                    </div>
-                </div>
-            </div>
+            </div >
         </>
     )
 }
