@@ -2,6 +2,7 @@ import React from "react";
 import "./Navigation.css"
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
+import HetLogo from "../NavigationBar/HetLogo.png"
 const Navigation = () => {
 
     const Links = [
@@ -30,7 +31,9 @@ const Navigation = () => {
                         {/* <span>hello</span> */}
                         <a href="mailto:sales@yellowspot.in" style={{ color: "white" }}><span>sales@yellowspot.in</span></a>
                     </div>
-                    <div></div>
+                    <div className="LogoContainer">
+                        {/* <img src={HetLogo} alt=""  style={{width:"50px"}}/> */}
+                    </div>
                     <div id="Navigationbtn">
                         <ul>
                             {Links.map((item, index) => (

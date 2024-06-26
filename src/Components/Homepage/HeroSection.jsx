@@ -5,6 +5,7 @@ import AboutUsHet from "../AboutUsHet/AboutUsHet";
 import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
 import Founder from "../Founders/Founders";
+import HetLogo from "../NavigationBar/HetLogo.png"
 const HeroSection = () => {
     const [fontSize, setFontSize] = useState("4rem");
     const [isSticky, setIsSticky] = useState(false);
@@ -79,7 +80,8 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px" }}>HET GRAPHICS</h1>
+                    <img src={HetLogo} alt="" className="HetLogo"/>
+                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px" }} className="mainTitleHeading">HET GRAPHICS</h1>
 
                 </div>
                 {/* <div className="section-padding"></div> */}
@@ -90,7 +92,7 @@ const HeroSection = () => {
                 {/* <section id="HetGraphicsInventories">
                     <Inventories />
                 </section> */}
-                <section style={{paddingTop:"4rem"}}>
+                <section style={{ paddingTop: "4rem" }}>
                     <Founder />
                 </section>
                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />

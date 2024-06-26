@@ -29,7 +29,12 @@
     font-size: 1rem;
     cursor: pointer;
 }
-
+.LogoContainer img{
+    display: none;
+}
+.sticky .LogoContainer img{
+    display: block;
+}
 #Navigationbtn .BtnStyle{
     font-size:13px;
     padding: 8px 17px;

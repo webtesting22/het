@@ -30,13 +30,31 @@
 
 .sticky {
     position: sticky;
-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     top: 0;
     width: 100%;
     padding-top: 0;
-    /* Remove padding when sticky */
+    display: flex;
+    justify-content: center;
 }
-.overlayImageContainer{
+
+.sticky .HetLogo {
+    display: block;
+    width: 100px;
+}
+
+.mainTitleHeading{
+    display: block;
+}
+.sticky .mainTitleHeading{
+    display: none;
+}
+.HetLogo {
+    display: none;
+}
+
+
+.overlayImageContainer {
     background-image: url("../AboutUsHet/MPC_0472.JPG");
     width: 100%;
     position: absolute;
@@ -46,13 +64,15 @@ backdrop-filter: blur(10px);
     overflow: hidden;
     background-attachment: fixed;
 }
-.blackOverlay{
+
+.blackOverlay {
     position: absolute;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.737);
 }
-.AboutUsContainer{
+
+.AboutUsContainer {
     margin-top: 50vh;
     margin-bottom: 4rem;
 }
