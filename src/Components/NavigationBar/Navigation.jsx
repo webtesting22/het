@@ -7,7 +7,7 @@ const Navigation = () => {
 
     const Links = [
         {
-            link: "AboutUs",
+            link: "About Us",
             id: "AboutUsContainer"
         },
         {
