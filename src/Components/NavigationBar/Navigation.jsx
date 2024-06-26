@@ -11,12 +11,12 @@ const Navigation = () => {
         },
         {
             link: "Gallery",
-            id: "AboutUsContainer"
+            id: "GalleryContainer"
         },
-        {
-            link: "Inventories",
-            id: "HetGraphicsInventories"
-        }
+        // {
+        //     link: "Inventories",
+        //     id: "HetGraphicsInventories"
+        // }
 
 
     ]

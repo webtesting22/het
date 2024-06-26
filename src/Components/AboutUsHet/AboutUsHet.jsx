@@ -12,6 +12,7 @@ import AnimatedImage9 from "./Images/het8.png"
 import AnimatedImage10 from "./Images/het9.png"
 import AnimatedImage11 from "./Images/het10.png"
 import billboard from "./billboard gif (4).gif"
+// import 
 // import billboard from "./try.gif"
 const AboutUsHet = () => {
     useEffect(() => {
@@ -86,7 +87,7 @@ const AboutUsHet = () => {
                         <img src={billboard} alt="" />
                     </div>
                     <div className="section-padding"></div>
-                    <div className="floatsImageContainer">
+                    <div className="floatsImageContainer" id="GalleryContainer">
                         <div className="images">
                             <img src={AnimatedImage1} alt="" className="parallax-image" />
                             <img src={AnimatedImage2} alt="" className="parallax-image" />
