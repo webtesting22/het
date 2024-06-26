@@ -46,7 +46,7 @@ const Navigation = () => {
                                     </li>
                                 </ScrollLink>
                             ))}
-                            <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">YelloSpot</button></a>
+                            <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">YellowSpot</button></a>
                         </ul>
                     </div>
                 </div>
