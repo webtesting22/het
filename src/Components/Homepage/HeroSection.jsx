@@ -87,10 +87,10 @@ const HeroSection = () => {
                     <AboutUsHet />
                 </section>
                 <div className="section-padding"></div>
-                <section id="HetGraphicsInventories">
+                {/* <section id="HetGraphicsInventories">
                     <Inventories />
-                </section>
-                <section>
+                </section> */}
+                <section style={{paddingTop:"4rem"}}>
                     <Founder />
                 </section>
                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
