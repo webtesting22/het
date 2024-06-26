@@ -16,9 +16,9 @@ const Footer = () => {
             <section id="Footer">
                 <div className="SocialIcons">
                     <div>
-                        <div>Instagram <i class='bx bx-right-arrow-alt'></i></div>
-                        <div>Linkedin <i class='bx bx-right-arrow-alt'></i></div>
-                        <div>Facebook <i class='bx bx-right-arrow-alt'></i></div>
+                        <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><div>Instagram <i class='bx bx-right-arrow-alt'></i></div></a>
+                        <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank"><div>Linkedin <i class='bx bx-right-arrow-alt'></i></div></a>
+                        <a href="https://www.facebook.com/p/Yellow-Spot-100083305608740/" target="_blank"><div>Facebook <i class='bx bx-right-arrow-alt'></i></div></a>
                     </div>
                 </div>
                 <div>
