@@ -6,7 +6,7 @@ import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
 import Founder from "../Founders/Founders";
 const HeroSection = () => {
-    const [fontSize, setFontSize] = useState("5rem");
+    const [fontSize, setFontSize] = useState("4rem");
     const [isSticky, setIsSticky] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(true);
 
