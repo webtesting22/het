@@ -79,3 +79,9 @@
     margin-top: 50vh;
     /* margin-bottom: 4rem; */
 }
+
+@media (max-width: 768px) {
+    .MainTitle h1 {
+      font-size: 3rem !important;
+    }
+  }

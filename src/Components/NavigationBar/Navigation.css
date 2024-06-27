@@ -8,7 +8,11 @@
     z-index: 110;
 
 }
-
+@media (max-width:769px){
+    .navigation{
+        display: none;
+    }
+}
 .navigation>div {
     width: 100%;
     background-color: transparent;

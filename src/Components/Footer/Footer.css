@@ -72,4 +72,18 @@
         font-size: 3rem;
         color: white;
     }
+    .SocialIcons>div {
+        display: flex;
+        margin-right: 0px;
+    }
+    .SocialIcons>div div {
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+    .SocialIcons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 20px 0px;
+    }
 }
