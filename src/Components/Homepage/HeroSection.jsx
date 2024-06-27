@@ -69,6 +69,7 @@ const HeroSection = () => {
             window.removeEventListener('resize', handleScroll);
         };
     }, [location]);
+  
     return (
         <>
 
@@ -80,19 +81,18 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <img src={HetLogo} alt="" className="HetLogo"/>
+                    <img src={HetLogo} alt="" className="HetLogo" />
                     <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px" }} className="mainTitleHeading">HET GRAPHICS</h1>
 
                 </div>
-                {/* <div className="section-padding"></div> */}
                 <section className="AboutUsContainer" id="AboutUsContainer">
                     <AboutUsHet />
                 </section>
-                <div className="section-padding"></div>
                 {/* <section id="HetGraphicsInventories">
                     <Inventories />
                 </section> */}
-                <section style={{ paddingTop: "4rem" }}>
+                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
+                <section>
                     <Founder />
                 </section>
                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />

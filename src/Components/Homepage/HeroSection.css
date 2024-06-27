@@ -31,7 +31,7 @@
 .sticky {
     position: sticky;
     backdrop-filter: blur(10px);
-    top: 0;
+    top: -1px;
     width: 100%;
     padding-top: 0;
     display: flex;
@@ -44,12 +44,14 @@
     padding: 5px;
 }
 
-.mainTitleHeading{
+.mainTitleHeading {
     display: block;
 }
-.sticky .mainTitleHeading{
+
+.sticky .mainTitleHeading {
     display: none;
 }
+
 .HetLogo {
     display: none;
 }
@@ -75,5 +77,5 @@
 
 .AboutUsContainer {
     margin-top: 50vh;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }

@@ -61,14 +61,14 @@ const Founder = () => {
                 <section className="FounderContainer container">
                     <Row>
                         <Col lg={12} md={24}>
-                            <h4 className="FounderTitle">Meet <br />Founder</h4>
+                            <h4 className="FounderTitle">Meet Our Founder</h4>
                         </Col>
                         <Col lg={12} md={24}>
                             <div className="FoundersContainerCards">
                                 {FounderDetails.map((item, index) => (
                                     <div key={index} className="FounderCard" data-aos="fade-up"
                                         data-aos-duration={(index + 1) * 800}>
-                                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                                        <div style={{ display: "flex", justifyContent: "space-between",alignItems:"center" }}>
                                             <h4>{item.founderTitle}</h4>
                                             <i class='bx bxl-linkedin socialIcons' ></i>
                                         </div>

@@ -29,10 +29,17 @@ const Navigation = () => {
                 <div className="navigation">
                     <div>
                         {/* <span>hello</span> */}
-                        <a href="mailto:sales@yellowspot.in" style={{ color: "white" }}><span>sales@yellowspot.in</span></a>
+                        <a href="mailto:sales@yellowspot.in" style={{ color: "white", display: "flex" }}>
+                            <span style={{ display: "flex", alignItems: "center" }}>
+                                <i class='bx bxs-envelope'></i>&nbsp;sales@yellowspot.in,</span> </a>&nbsp;&nbsp;
+
+                        <a href="tel:+91 93242 44444" style={{ color: "white", display: "flex" }}>
+                            <span style={{ display: "flex", alignItems: "center" }}>
+                                <i class='bx bxs-phone-call'></i>&nbsp;+91 93242 44444 </span>
+                        </a>
+
                     </div>
                     <div className="LogoContainer">
-                        {/* <img src={HetLogo} alt=""  style={{width:"50px"}}/> */}
                     </div>
                     <div id="Navigationbtn">
                         <ul>

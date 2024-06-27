@@ -11,6 +11,12 @@ import AnimatedImage8 from "./Images/het7.png"
 import AnimatedImage9 from "./Images/het8.png"
 import AnimatedImage10 from "./Images/het9.png"
 import AnimatedImage11 from "./Images/het10.png"
+import AnimatedImage12 from "./Images/het11.png"
+import AnimatedImage13 from "./Images/het12.png"
+// import AnimatedImage14 from "./Images/het13.png"
+import AnimatedImage14 from "./Images/het14.png"
+import AnimatedImage15 from "./Images/het15.png"
+import AnimatedImage16 from "./Images/het16.png"
 import billboard from "./billboard gif (4).gif"
 // import 
 // import billboard from "./try.gif"
@@ -27,14 +33,14 @@ const AboutUsHet = () => {
             images.forEach((image, index) => {
                 let factor = 0.1; // Default parallax factor
                 if (index === 0 || index === 2) {
-                    factor = 0.3; // Faster parallax for the first and third images
+                    factor = 0.1; // Faster parallax for the first and third images
                 }
                 image.style.transform = `translateY(${scrollY * factor}px)`;
             });
             headings.forEach((heading, index) => {
-                const offset = window.innerHeight * (index + 1) - scrollY - 200;
+                const offset = window.innerHeight * (index + 1) - scrollY - 100;
                 if (offset > 0 && offset < window.innerHeight) {
-                    heading.style.transform = `translateX(${200 - offset}px)`;
+                    heading.style.transform = `translateX(${100 - offset}px)`;
                 } else {
                     heading.style.transform = `translateX(200px)`; // Reset to start position
                 }
@@ -73,8 +79,10 @@ const AboutUsHet = () => {
                         <br />
                         <br />
                     </div>
-                    <div className="ParaBackEdit">
-                        <p>Find out more about our subsidiary company and book your first inventory now!</p>
+                    <div className="ParaBackEdit ">
+                        <div className="container">
+                            <p>Find out more about our subsidiary company and book your first inventory now!</p>
+                        </div>
                         <div className="BtnContainer">
                             <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="BtnStyle">YellowSpot</button></a>
                             {/* <button className="BtnStyle_transparent">More About Company <i class='bx bx-right-arrow-alt'></i></button> */}
@@ -82,13 +90,12 @@ const AboutUsHet = () => {
                     </div>
 
                 </div>
-                <div className="container" >
+                <div className="container" style={{ position: "relative" }} >
                     <div id="BackgroundImage">
                         <img src={billboard} alt="" />
                     </div>
-                    <div className="section-padding"></div>
                     <div className="floatsImageContainer" id="GalleryContainer">
-                        <div className="images">
+                        <div className="images" style={{ position: "relative" }}>
                             <img src={AnimatedImage1} alt="" className="parallax-image" />
                             <img src={AnimatedImage2} alt="" className="parallax-image" />
                             <img src={AnimatedImage3} alt="" className="parallax-image" />
@@ -100,6 +107,11 @@ const AboutUsHet = () => {
                             <img src={AnimatedImage9} alt="" className="parallax-image" />
                             <img src={AnimatedImage10} alt="" className="parallax-image" />
                             <img src={AnimatedImage11} alt="" className="parallax-image" />
+                            <img src={AnimatedImage12} alt="" className="parallax-image" />
+                            <img src={AnimatedImage13} alt="" className="parallax-image" />
+                            <img src={AnimatedImage14} alt="" className="parallax-image" />
+                            <img src={AnimatedImage15} alt="" className="parallax-image" />
+                            {/* <img src={AnimatedImage16} alt="" className="parallax-image" /> */}
                             {/* <img src={AnimatedImage1} alt="" className="parallax-image" /> */}
                         </div>
                     </div>
