@@ -69,7 +69,7 @@ const HeroSection = () => {
             window.removeEventListener('resize', handleScroll);
         };
     }, [location]);
-  
+
     return (
         <>
 
@@ -79,11 +79,12 @@ const HeroSection = () => {
                     <div className="blackOverlay">
 
                     </div>
+                    <img src={HetLogo} alt="" className="homeScreenLogo"/>
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
                     <img src={HetLogo} alt="" className="HetLogo" />
-                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px" }} className="mainTitleHeading">HET GRAPHICS</h1>
-
+                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px",letterSpacing:"1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
+                   
                 </div>
                 <section className="AboutUsContainer" id="AboutUsContainer">
                     <AboutUsHet />
@@ -91,11 +92,11 @@ const HeroSection = () => {
                 {/* <section id="HetGraphicsInventories">
                     <Inventories />
                 </section> */}
-                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
+                <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
                 <section>
                     <Founder />
                 </section>
-                <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
+                <hr className="FooterHr" />
                 {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
             </section>
         </>

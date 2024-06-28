@@ -17,9 +17,11 @@
     width: 100%;
     justify-content: end;
 }
-.SocialIcons a{
+
+.SocialIcons a {
     color: white;
 }
+
 .SocialIcons>div {
     display: flex;
     margin-right: 50px;
@@ -57,29 +59,52 @@
 .copyrightText p a {
     color: white;
 }
-.copyrightText p i{
+
+.copyrightText p i {
     rotate: -45deg;
     transition: .5s;
 }
+
 .copyrightText p:hover i {
     rotate: -45deg;
     transform: translateX(5px);
     transition: .5s;
 }
 
-@media (max-width:769px){
+#ContactInfo {
+    display: none;
+}
+
+@media (max-width:769px) {
+    #ContactInfo {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    
+    }
+
+    .SocialIcons {
+        display: flex;
+        flex-direction: column;
+    }
+
     #Footer h1 {
         font-size: 3rem;
         color: white;
     }
+
     .SocialIcons>div {
         display: flex;
         margin-right: 0px;
+        justify-content: center;
     }
+
     .SocialIcons>div div {
         margin: 0px 10px;
         cursor: pointer;
     }
+
     .SocialIcons {
         display: flex;
         width: 100%;

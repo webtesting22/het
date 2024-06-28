@@ -66,6 +66,9 @@
     height: 100vh;
     overflow: hidden;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blackOverlay {
@@ -79,8 +82,29 @@
     margin-top: 50vh;
     /* margin-bottom: 4rem; */
 }
-
+.homeScreenLogo{
+    position: absolute;
+    z-index: 55;
+    width: 16%;
+    top: 29%;
+}
+.FooterHr{
+ border: 1px solid #ffed00;
+  opacity: 1;
+   margin-bottom: 4rem;
+}
 @media (max-width: 768px) {
+    .homeScreenLogo {
+        position: absolute;
+    z-index: 55;
+    width: 46%;
+    top: 35%;
+    }
+    .FooterHr{
+        border: 1px solid #ffed00;
+         opacity: 1;
+          margin-bottom: 1rem;
+       }
     .MainTitle h1 {
       font-size: 3rem !important;
     }

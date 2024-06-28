@@ -97,11 +97,11 @@ const AboutUsHet = () => {
                     <div className="floatsImageContainer" id="GalleryContainer">
                         <div className="images" style={{ position: "relative" }}>
                             <img src={AnimatedImage1} alt="" className="parallax-image" />
+                            <img src={AnimatedImage4} alt="" className="parallax-image" />
+                            <img src={AnimatedImage6} alt="" className="parallax-image" />
                             <img src={AnimatedImage2} alt="" className="parallax-image" />
                             <img src={AnimatedImage3} alt="" className="parallax-image" />
-                            <img src={AnimatedImage4} alt="" className="parallax-image" />
                             <img src={AnimatedImage5} alt="" className="parallax-image" />
-                            <img src={AnimatedImage6} alt="" className="parallax-image" />
                             <img src={AnimatedImage7} alt="" className="parallax-image" />
                             <img src={AnimatedImage8} alt="" className="parallax-image" />
                             <img src={AnimatedImage9} alt="" className="parallax-image" />

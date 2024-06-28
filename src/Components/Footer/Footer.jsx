@@ -21,6 +21,16 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank"><div>Linkedin <i class='bx bx-right-arrow-alt'></i></div></a>
                         <a href="https://www.facebook.com/p/Yellow-Spot-100083305608740/" target="_blank"><div>Facebook <i class='bx bx-right-arrow-alt'></i></div></a>
                     </div>
+                    <div id="ContactInfo">
+                    <a href="mailto:sales@yellowspot.in" style={{ color: "white", display: "flex" }}>
+                            <span style={{ display: "flex", alignItems: "center" }}>
+                                <i class='bx bxs-envelope'></i>&nbsp;sales@yellowspot.in,</span> </a>&nbsp;&nbsp;
+
+                        <a href="tel:+91 93242 44444" style={{ color: "white", display: "flex" }}>
+                            <span style={{ display: "flex", alignItems: "center" }}>
+                                <i class='bx bxs-phone-call'></i>&nbsp;+91 93242 44444 </span>
+                                </a>
+                    </div>
                 </div>
                 <div>
                     <h1 data-aos="fade-zoom-in"
