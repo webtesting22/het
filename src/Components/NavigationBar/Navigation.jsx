@@ -1,9 +1,29 @@
-import React from "react";
+import React,{useEffect,useState } from "react";
 import "./Navigation.css"
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 import HetLogo from "../NavigationBar/HetLogo.png"
 const Navigation = () => {
+    // const [scrollPosition, setScrollPosition] = useState(0);
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const position = window.pageYOffset;
+    //         setScrollPosition(position);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+
+    // const navigationStyle = {
+    //     backdropFilter: scrollPosition > 200 ? 'none' : 'blur(10px)',
+    //     transition: 'backdrop-filter 0.3s ease-in-out'
+    // };
+
 
     const Links = [
         {

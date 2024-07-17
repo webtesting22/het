@@ -1,149 +1,35 @@
 .aboutUsContainer p {
     font-size: 1.3rem;
-    color: white;
+    /* color: rgb(0, 0, 0); */
     /* text-align: center; */
     /* font-family: sans-serif; */
 }
 
 .images {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* overflow: hidden; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
 }
 
 .images img {
+    width: 50%;
+    margin: 20px 50px;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
     width: 100%;
-    margin: 20px 0px;
 }
 
-.images img:nth-child(1) {
-    /* position: absolute; */
-    width: 30%;
-    /* margin-top: -5%; */
-    top: 0%;
+.image-container img {
+    display: inline-block;
+    transition: transform 0.5s ease;
 }
 
-.images img:nth-child(2) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: -5%; */
-    top: 0%;
-}
 
-.images img:nth-child(3) {
-    /* position: absolute; */
-    width: 30%;
-    right: 0%;
-    /* margin-top: -5%; */
-    top: 0%;
-
-}
-
-.images img:nth-child(4) {
-    /* position: absolute; */
-    width: 30%;
-    left: 0%;
-    /* margin-top: 22%; */
-
-}
-
-.images img:nth-child(5) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: 22%; */
-}
-
-.images img:nth-child(6) {
-    /* position: absolute; */
-    width: 30%;
-    right: 0%;
-    /* margin-top: 22%; */
-}
-
-.images img:nth-child(7) {
-    /* position: absolute; */
-    width: 30%;
-    left: 0%;
-    /* margin-top: 48%; */
-}
-
-.images img:nth-child(8) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: 48%; */
-}
-
-.images img:nth-child(9) {
-    /* position: absolute; */
-    width: 30%;
-    right: 0%;
-    /* margin-top: 48%; */
-}
-
-.images img:nth-child(10) {
-    /* position: absolute; */
-    width: 30%;
-    left: 0%;
-    /* margin-top: 75%; */
-    /* right: 3%; */
-}
-
-.images img:nth-child(11) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: 75%; */
-
-    /* right: 3%; */
-}
-
-.images img:nth-child(12) {
-    /* position: absolute; */
-    width: 30%;
-    right: 0%;
-    /* margin-top: 75%; */
-
-    /* right: 3%; */
-}
-
-.images img:nth-child(13) {
-    /* position: absolute; */
-    width: 30%;
-    left: 0%;
-    /* margin-top: 103%; */
-
-    /* right: 3%; */
-}
-
-.images img:nth-child(14) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: 103%; */
-
-    /* right: 3%; */
-}
-
-.images img:nth-child(15) {
-    /* position: absolute; */
-    width: 30%;
-    right: 0%;
-    /* margin-top: 103%; */
-
-    /* right: 3%; */
-}
-
-.images img:nth-child(16) {
-    /* position: absolute; */
-    width: 30%;
-    left: 35%;
-    /* margin-top: 97%; */
-
-    /* right: 3%; */
-}
 
 .images img:nth-child(1),
 .images img:nth-child(2),
@@ -162,36 +48,26 @@
 .images img:nth-child(15) {
     border-radius: 20px;
 }
-.floatsImageContainer {
-    /* margin-top: 7rem; */
-    position: relative;
-    margin-bottom: 25rem;
-    /* height: 260vh; */
-}
-@media (max-width:769px){
-    .floatsImageContainer {
-        /* margin-top: 7rem; */
-        position: relative;
-        margin-bottom: 4rem;
-        /* height: 260vh; */
-    }
+
+@media (max-width:769px) {
+  
     .images img:nth-child(1),
-.images img:nth-child(2),
-.images img:nth-child(3),
-.images img:nth-child(4),
-.images img:nth-child(5),
-.images img:nth-child(6),
-.images img:nth-child(7),
-.images img:nth-child(8),
-.images img:nth-child(9),
-.images img:nth-child(10),
-.images img:nth-child(11),
-.images img:nth-child(12),
-.images img:nth-child(13),
-.images img:nth-child(14),
-.images img:nth-child(15) {
-    width: 100%;
-}
+    .images img:nth-child(2),
+    .images img:nth-child(3),
+    .images img:nth-child(4),
+    .images img:nth-child(5),
+    .images img:nth-child(6),
+    .images img:nth-child(7),
+    .images img:nth-child(8),
+    .images img:nth-child(9),
+    .images img:nth-child(10),
+    .images img:nth-child(11),
+    .images img:nth-child(12),
+    .images img:nth-child(13),
+    .images img:nth-child(14),
+    .images img:nth-child(15) {
+        width: 100%;
+    }
 
 }
 
@@ -228,7 +104,7 @@
 
     .aboutUsContainer p {
         font-size: 1.3rem;
-        color: white;
+        /* color: rgb(0, 0, 0); */
         /* text-align: center; */
         width: 70%;
         margin: auto;

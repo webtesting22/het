@@ -6,12 +6,11 @@ import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
 import Founder from "../Founders/Founders";
 import HetLogo from "../NavigationBar/HetLogo.png"
+import ImageGallery from "../ImgesGallery/ImagesGallery";
 const HeroSection = () => {
     const [fontSize, setFontSize] = useState("4rem");
     const [isSticky, setIsSticky] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(true);
-
-
 
     useEffect(() => {
         if (!isModalOpen) {
@@ -70,24 +69,51 @@ const HeroSection = () => {
         };
     }, [location]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const parent1 = document.querySelector('.chacha');
+
+
+            if (parent1) {
+                const scrollY = window.scrollY;
+                parent1.style.transform = `translateY(-${scrollY}px)`;
+
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
+
+
+
+
     return (
         <>
-
-
             <section id="HeroSection">
                 <div className="overlayImageContainer">
                     <div className="blackOverlay">
 
                     </div>
-                    <img src={HetLogo} alt="" className="homeScreenLogo"/>
+                    <img src={HetLogo} alt="" className="homeScreenLogo" />
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
                     <img src={HetLogo} alt="" className="HetLogo" />
-                    <h1 style={{ fontSize, letterSpacing: "-2px", paddingTop: "13px", paddingBottom: "13px",letterSpacing:"1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
-                   
+                    <h1 style={{ fontSize, paddingTop: "13px", paddingBottom: "13px", letterSpacing: "1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
+
                 </div>
+
                 <section className="AboutUsContainer" id="AboutUsContainer">
                     <AboutUsHet />
+                </section>
+                <section className={isSticky ? 'sticky-section' : 'normal-section'}>
+                    <ImageGallery />
                 </section>
                 {/* <section id="HetGraphicsInventories">
                     <Inventories />
@@ -97,8 +123,12 @@ const HeroSection = () => {
                     <Founder />
                 </section>
                 <hr className="FooterHr" />
-                {/* <div style={{ height: "200vh", width: "100%" }}></div> */}
+
             </section>
+
+            {/* <div style={{ backgroundColor: "black", }}>
+                <GsapHome />
+            </div> */}
         </>
     );
 };

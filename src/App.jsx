@@ -11,9 +11,9 @@ function App() {
         <div>
           <Navigation />
           <Routes>
-              <Route path='/' element={<HeroSection/>}></Route>
+            <Route path='/' element={<HeroSection />}></Route>
           </Routes>
-            <Footer/>
+          <Footer />
         </div>
       </BrowserRouter>
     </>

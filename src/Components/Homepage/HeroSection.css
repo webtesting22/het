@@ -82,30 +82,61 @@
     margin-top: 50vh;
     /* margin-bottom: 4rem; */
 }
-.homeScreenLogo{
+
+.homeScreenLogo {
     position: absolute;
     z-index: 55;
     width: 16%;
     top: 29%;
 }
-.FooterHr{
- border: 1px solid #ffed00;
-  opacity: 1;
-   margin-bottom: 4rem;
+
+.FooterHr {
+    border: 1px solid #ffed00;
+    opacity: 1;
+    margin-bottom: 4rem;
 }
+
 @media (max-width: 768px) {
     .homeScreenLogo {
         position: absolute;
-    z-index: 55;
-    width: 46%;
-    top: 35%;
+        z-index: 55;
+        width: 46%;
+        top: 35%;
     }
-    .FooterHr{
+
+    .FooterHr {
         border: 1px solid #ffed00;
-         opacity: 1;
-          margin-bottom: 1rem;
-       }
-    .MainTitle h1 {
-      font-size: 3rem !important;
+        opacity: 1;
+        margin-bottom: 1rem;
     }
-  }
+
+    .MainTitle h1 {
+        font-size: 3rem !important;
+    }
+}
+
+
+
+.normal-section {
+    position: static;
+}
+@media (min-width:1000px) and (max-width:1300px){
+    .sticky-section {
+        position: -webkit-sticky;
+        /* For Safari */
+        position: sticky;
+        /* top: 0; */
+        height: 1800vh;
+        /* overflow: hidden; */
+    }
+}
+@media (min-width:1400px) and (max-width:3000px){
+    .sticky-section {
+        position: -webkit-sticky;
+        /* For Safari */
+        position: sticky;
+        /* top: 0; */
+        height: 1600vh;
+        /* overflow: hidden; */
+    }
+}

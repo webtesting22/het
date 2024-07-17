@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./AboutUs.css"
 import AnimatedImage1 from "./Images/HET Image.jpg"
 import AnimatedImage2 from "./Images/Het.jpg"
@@ -17,52 +17,52 @@ import AnimatedImage13 from "./Images/het12.png"
 import AnimatedImage14 from "./Images/het14.png"
 import AnimatedImage15 from "./Images/het15.png"
 import AnimatedImage16 from "./Images/het16.png"
-import billboard from "./billboard gif (4).gif"
+
 // import 
-// import billboard from "./try.gif"
+import billboard from "./try.gif"
 const AboutUsHet = () => {
-    useEffect(() => {
-        const isPC = () => {
-            return window.innerWidth >= 1024; // Assuming PC screens are wider than 1024px
-        };
 
-        const handleScroll = () => {
-            const images = document.querySelectorAll(".parallax-image");
-            const headings = document.querySelectorAll(".heading");
-            const scrollY = window.scrollY;
-            images.forEach((image, index) => {
-                let factor = 0.1; // Default parallax factor
-                if (index === 0 || index === 2) {
-                    factor = 0.1; // Faster parallax for the first and third images
-                }
-                image.style.transform = `translateY(${scrollY * factor}px)`;
-            });
-            headings.forEach((heading, index) => {
-                const offset = window.innerHeight * (index + 1) - scrollY - 100;
-                if (offset > 0 && offset < window.innerHeight) {
-                    heading.style.transform = `translateX(${100 - offset}px)`;
-                } else {
-                    heading.style.transform = `translateX(200px)`; // Reset to start position
-                }
-            });
-        };
+    // const containerRef = useRef(null);
 
-        if (isPC()) {
-            window.addEventListener("scroll", handleScroll);
-        }
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const scrollTop = window.scrollY;
+    //         const container = containerRef.current;
+    //         if (container) {
+    //             const translateValue = scrollTop * -0.5; // Adjust the factor to control the speed
+    //             container.style.transform = `translateX(${translateValue}px)`;
+    //         }
+    //     };
 
-        return () => {
-            if (isPC()) {
-                window.removeEventListener("scroll", handleScroll);
-            }
-        };
-    }, []);
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
+    // const images = [
+    //     AnimatedImage1,
+    //     AnimatedImage4,
+    //     AnimatedImage6,
+    //     AnimatedImage2,
+    //     AnimatedImage3,
+    //     AnimatedImage5,
+    //     AnimatedImage7,
+    //     AnimatedImage8,
+    //     AnimatedImage9,
+    //     AnimatedImage10,
+    //     AnimatedImage11,
+    //     AnimatedImage12,
+    //     AnimatedImage13,
+    //     AnimatedImage14,
+    //     AnimatedImage15
+    // ];
     return (
         <>
             <div>
                 <div className="aboutUsContainer">
-                    <div className="container">
 
+                    <div className="container">
+                        {/* <ReactDemo /> */}
 
                         <p>Het Graphics, Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
                         <br />
@@ -79,6 +79,7 @@ const AboutUsHet = () => {
                         <br />
                         <br />
                     </div>
+                    {/* <HetHome/> */}
                     <div className="ParaBackEdit ">
                         <div className="container">
                             <p>Find out more about our subsidiary company and book your first inventory now!</p>
@@ -90,32 +91,16 @@ const AboutUsHet = () => {
                     </div>
 
                 </div>
-                <div className="container" style={{ position: "relative" }} >
+                {/* <div className="container" style={{width:"100%",overflow:"hidden"}}>
                     <div id="BackgroundImage">
                         <img src={billboard} alt="" />
                     </div>
-                    <div className="floatsImageContainer" id="GalleryContainer">
-                        <div className="images" style={{ position: "relative" }}>
-                            <img src={AnimatedImage1} alt="" className="parallax-image" />
-                            <img src={AnimatedImage4} alt="" className="parallax-image" />
-                            <img src={AnimatedImage6} alt="" className="parallax-image" />
-                            <img src={AnimatedImage2} alt="" className="parallax-image" />
-                            <img src={AnimatedImage3} alt="" className="parallax-image" />
-                            <img src={AnimatedImage5} alt="" className="parallax-image" />
-                            <img src={AnimatedImage7} alt="" className="parallax-image" />
-                            <img src={AnimatedImage8} alt="" className="parallax-image" />
-                            <img src={AnimatedImage9} alt="" className="parallax-image" />
-                            <img src={AnimatedImage10} alt="" className="parallax-image" />
-                            <img src={AnimatedImage11} alt="" className="parallax-image" />
-                            <img src={AnimatedImage12} alt="" className="parallax-image" />
-                            <img src={AnimatedImage13} alt="" className="parallax-image" />
-                            <img src={AnimatedImage14} alt="" className="parallax-image" />
-                            <img src={AnimatedImage15} alt="" className="parallax-image" />
-                            {/* <img src={AnimatedImage16} alt="" className="parallax-image" /> */}
-                            {/* <img src={AnimatedImage1} alt="" className="parallax-image" /> */}
-                        </div>
+                    <div className="images" ref={containerRef}>
+                        {images.map((src, index) => (
+                            <img key={index} src={src} alt="" />
+                        ))}
                     </div>
-                </div>
+                </div> */}
             </div >
         </>
     )

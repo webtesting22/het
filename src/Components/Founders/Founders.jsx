@@ -66,8 +66,7 @@ const Founder = () => {
                         <Col lg={12} md={24}>
                             <div className="FoundersContainerCards">
                                 {FounderDetails.map((item, index) => (
-                                    <div key={index} className="FounderCard" data-aos="fade-up"
-                                        data-aos-duration={(index + 1) * 800}>
+                                    <div key={index} className="FounderCard" >
                                         <div style={{ display: "flex", justifyContent: "space-between",alignItems:"center" }}>
                                             <h4>{item.founderTitle}</h4>
                                             <i class='bx bxl-linkedin socialIcons' ></i>

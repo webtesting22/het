@@ -6,6 +6,7 @@
     width: 100%;
     background-color: transparent;
     z-index: 110;
+    /* backdrop-filter: blur(10px); */
 
 }
 @media (max-width:769px){
