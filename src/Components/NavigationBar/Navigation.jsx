@@ -51,7 +51,7 @@ const Navigation = () => {
                         {/* <span>hello</span> */}
                         <a href="mailto:sales@yellowspot.in" style={{ color: "white", display: "flex" }}>
                             <span style={{ display: "flex", alignItems: "center" }}>
-                                <i class='bx bxs-envelope'></i>&nbsp;sales@yellowspot.in,</span> </a>&nbsp;&nbsp;
+                                <i class='bx bxs-envelope'></i>&nbsp;sales@yellowspot.in</span> </a>&nbsp;&nbsp;
 
                         <a href="tel:+91 93242 44444" style={{ color: "white", display: "flex" }}>
                             <span style={{ display: "flex", alignItems: "center" }}>

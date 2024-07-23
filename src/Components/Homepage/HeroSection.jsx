@@ -54,8 +54,8 @@ const HeroSection = () => {
                 const sectionElement = document.getElementById(sectionId);
                 if (sectionElement) {
                     setTimeout(() => {
-                        sectionElement.scrollIntoView({ behavior: 'smooth' });
-                    }, 100); // Slightly longer delay to ensure the component is fully rendered
+                        sectionElement.scrollIntoView({ behavior:'smooth' });
+                    }, 1000); // Slightly longer delay to ensure the component is fully rendered
                 }
             }
         };
@@ -104,7 +104,7 @@ const HeroSection = () => {
                     <img src={HetLogo} alt="" className="homeScreenLogo" />
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <img src={HetLogo} alt="" className="HetLogo" />
+                    <img src={HetLogo} style={{transition:"0.3s ease-in-out"}} alt="" className="HetLogo" />
                     <h1 style={{ fontSize, paddingTop: "13px", paddingBottom: "13px", letterSpacing: "1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
 
                 </div>
@@ -115,9 +115,7 @@ const HeroSection = () => {
                 <section className={isSticky ? 'sticky-section' : 'normal-section'}>
                     <ImageGallery />
                 </section>
-                {/* <section id="HetGraphicsInventories">
-                    <Inventories />
-                </section> */}
+              
                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
                 <section>
                     <Founder />
@@ -125,10 +123,6 @@ const HeroSection = () => {
                 <hr className="FooterHr" />
 
             </section>
-
-            {/* <div style={{ backgroundColor: "black", }}>
-                <GsapHome />
-            </div> */}
         </>
     );
 };

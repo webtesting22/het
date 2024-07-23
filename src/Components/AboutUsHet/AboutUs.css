@@ -1,20 +1,17 @@
 .aboutUsContainer p {
     font-size: 1.3rem;
-    /* color: rgb(0, 0, 0); */
-    /* text-align: center; */
-    /* font-family: sans-serif; */
+    font-family: sans-serif;
+    
 }
 
 .images {
     display: flex;
-    /* overflow: hidden; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
 }
 
 .images img {
     width: 50%;
-    margin: 20px 50px;
+    height: 400px;
+    margin: 20px 20px;
 }
 
 .image-container {
@@ -100,6 +97,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        
     }
 
     .aboutUsContainer p {
@@ -107,8 +105,9 @@
         /* color: rgb(0, 0, 0); */
         /* text-align: center; */
         width: 70%;
-        margin: auto;
-        /* font-family: sans-serif; */
+        /* padding-bottom: 1rem; */
+        margin: 10px auto;
+        font-family: sans-serif;
     }
 
 }
@@ -116,7 +115,8 @@
 
 .ParaBackEdit {
     background-color: #ffed00;
-    padding: 4rem 0rem;
+    padding: 1.5rem 0rem;
+    height: 15vh;
 }
 
 .ParaBackEdit p {
