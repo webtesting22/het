@@ -104,7 +104,7 @@ const HeroSection = () => {
                     <img src={HetLogo} alt="" className="homeScreenLogo" />
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <img src={HetLogo} style={{transition:"0.3s ease-in-out"}} alt="" className="HetLogo" />
+                    <img src={HetLogo}  alt="" className="HetLogoopacity" />
                     <h1 style={{ fontSize, paddingTop: "13px", paddingBottom: "13px", letterSpacing: "1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
 
                 </div>

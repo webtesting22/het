@@ -116,7 +116,7 @@
 .ParaBackEdit {
     background-color: #ffed00;
     padding: 1.5rem 0rem;
-    height: 15vh;
+    /* height: 15vh; */
 }
 
 .ParaBackEdit p {

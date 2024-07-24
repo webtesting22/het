@@ -9,7 +9,7 @@
     width: 100%;
     text-align: center;
     color: white;
-    transition:  0.3s ease-out;
+    /* transition:  0.3s ease-out; */
     z-index: 10;
     position: sticky;
 }
@@ -17,7 +17,7 @@
 .MainTitle h1 {
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .sticky h1 {
@@ -37,12 +37,20 @@
     display: flex;
     justify-content: center;
 }
+.HetLogoopacity {
+   opacity: 0;
+    width: 30px;
+    /* transition: .; */
+    transition: 0s;
+}
 
-.sticky .HetLogo {
-    display: block;
+
+.sticky .HetLogoopacity {
+   opacity: 1;
     /* transition: 0.5s ease-in-out; */
     width: 100px;
     padding: 5px;
+    transition: .2s;
 }
 
 .mainTitleHeading {
@@ -54,9 +62,6 @@
     display: none;
 }
 
-.HetLogo {
-    display: none;
-}
 
 
 .overlayImageContainer {
@@ -122,13 +127,14 @@
 .normal-section {
     position: static;
 }
+
 @media (min-width:1000px) and (max-width:1300px){
     .sticky-section {
         position: -webkit-sticky;
         /* For Safari */
         position: sticky;
         /* top: 0; */
-        height: 1800vh;
+        height: 740vh;
         /* overflow: hidden; */
     }
 }

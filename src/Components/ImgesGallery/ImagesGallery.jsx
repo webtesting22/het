@@ -8,6 +8,7 @@ import AnimatedImage6 from "../AboutUsHet/Images/Cantilever2.jpg"
 import AnimatedImage7 from "../AboutUsHet/Images/Hoarding1.jpg"
 import AnimatedImage8 from "../AboutUsHet/Images/Hoarding4.jpg"
 import { Image } from 'antd';
+import "./ImageGallery.css"
 const ImageGallery = () => {
     const containerRef = useRef(null);
 

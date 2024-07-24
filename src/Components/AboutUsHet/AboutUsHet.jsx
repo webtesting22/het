@@ -61,7 +61,7 @@ const AboutUsHet = () => {
             <div>
                 <div className="aboutUsContainer">
 
-                    <div className="container">
+                    <div className="container" style={{marginBottom:"2rem"}}>
                         <p data-aos="fade-up" data-aos-duration="1000">Het Graphics started its business in the outdoor media industry in the year 2000 and is known for its innovations and ideas in the industry. We began our journey by introducing Pole Kiosks in the city of Ahmedabad. Currently, we provide several billboard media options such as Gantries, Unipoles, large-format Hoardings, Cantilevers, Pole Kiosks and LEDs.</p>
                         <br />
                         <p data-aos="fade-up" data-aos-duration="1000">
