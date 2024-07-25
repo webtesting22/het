@@ -138,13 +138,13 @@
         /* overflow: hidden; */
     }
 }
-@media (min-width:1400px) and (max-width:3000px){
+@media (min-width:1310px) and (max-width:3000px){
     .sticky-section {
         position: -webkit-sticky;
         /* For Safari */
         position: sticky;
         /* top: 0; */
-        height: 365vh;
+        height: 480vh;
         /* overflow: hidden; */
     }
 }
