@@ -1,5 +1,6 @@
 .FounderContainer {
-    margin: 4rem 0rem;
+    margin: 1rem 0rem;
+    background: linear-gradient(to right, rgba(255, 237, 0, 0.3) 0%, rgba(255, 237, 0, 0) 20%, rgba(255, 237, 0, 0) 80%, rgba(255, 237, 0, 0.3) 100%);
 }
 
 .FoundersContainerCards {
@@ -7,7 +8,11 @@
     justify-content: center;
 
 }
-
+.founderTitleContainer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 .FounderCard {
     width: 100%;
     /* background-color: rgb(255, 255, 255); */
@@ -21,6 +26,7 @@
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 300;
+    
     /* color: rgb(0, 0, 0); */
 }
 
@@ -115,4 +121,9 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
+}
+@media (max-width:700px){
+    .FounderContainer{
+        background: none;
+    }
 }

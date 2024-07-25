@@ -3,7 +3,6 @@
     font-family: sans-serif;
     
 }
-
 .images {
     display: flex;
 }
@@ -12,6 +11,7 @@
     width: 50%;
     height: 400px;
     margin: 20px 20px;
+    
 }
 
 .image-container {
@@ -97,7 +97,9 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        
+        /* background: linear-gradient(to right, #2c3e50, #34495e); */
+        background: linear-gradient(to right, rgba(255, 237, 0, 0.3) 0%, rgba(255, 237, 0, 0) 20%, rgba(255, 237, 0, 0) 80%, rgba(255, 237, 0, 0.3) 100%);
+
     }
 
     .aboutUsContainer p {
@@ -112,7 +114,31 @@
 
 }
 
+@media (min-width:400px) and (max-width:1299px){
+    .aboutUsContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(to right, rgba(255, 237, 0, 0.3) 0%, rgba(255, 237, 0, 0) 20%, rgba(255, 237, 0, 0) 80%, rgba(255, 237, 0, 0.3) 100%);
+        /* background: linear-gradient(to right, #2c3e50, #34495e); */
 
+
+    }
+    .aboutUsContainer p {
+        font-size: 1.3rem;
+        /* color: rgb(0, 0, 0); */
+        /* text-align: center; */
+        width: 70%;
+        /* padding-bottom: 1rem; */
+        margin: 10px auto;
+        font-family: sans-serif;
+    }
+}
+@media (max-width:700px){
+    .aboutUsContainer{
+        background: none;
+    }
+}
 .ParaBackEdit {
     background-color: #ffed00;
     padding: 1.5rem 0rem;
