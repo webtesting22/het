@@ -30,6 +30,7 @@
 .sticky {
     position: sticky;
     backdrop-filter: blur(10px);
+    
     transition: 0.3s ease-in-out;
     top: -1px;
     width: 100%;
@@ -86,8 +87,9 @@
 }
 
 .AboutUsContainer {
-    margin-top: 45vh;
+    margin-top: 40vh;
     /* margin-bottom: 4rem; */
+    
 }
 
 .homeScreenLogo {
@@ -101,7 +103,11 @@
     border: 1px solid #ffed00;
     opacity: 1;
     margin-bottom: 4rem;
-}
+ }
+
+/* .sticky-section{
+    background: linear-gradient(to right, rgba(255, 237, 0, 0.3) 0%, rgba(255, 237, 0, 0) 40%, rgba(255, 237, 0, 0) 60%, rgba(255, 237, 0, 0.3) 100%);
+} */
 
 @media (max-width: 768px) {
     .homeScreenLogo {
@@ -132,19 +138,25 @@
     .sticky-section {
         position: -webkit-sticky;
         /* For Safari */
+        
         position: sticky;
         /* top: 0; */
-        height: 740vh;
+        height: 600vh;
         /* overflow: hidden; */
     }
 }
-@media (min-width:1310px) and (max-width:3000px){
+@media (min-width:1301px) and (max-width:3000px){
     .sticky-section {
         position: -webkit-sticky;
         /* For Safari */
         position: sticky;
         /* top: 0; */
-        height: 480vh;
+        height: 550vh;
         /* overflow: hidden; */
+    }
+}
+@media(min-width:1000px){
+    .sticky-section{
+        background: linear-gradient(to right, rgba(255, 237, 0, 0.3) 0%, rgba(255, 237, 0, 0) 40%, rgba(255, 237, 0, 0) 60%, rgba(255, 237, 0, 0.3) 100%);
     }
 }

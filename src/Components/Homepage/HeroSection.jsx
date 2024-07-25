@@ -114,9 +114,10 @@ const HeroSection = () => {
                 </section>
                 <section className={isSticky ? 'sticky-section' : 'normal-section'}>
                     <ImageGallery />
+                    
                 </section>
-              
-                <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "4rem" }} />
+
+                <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "0rem" }} />
                 <section>
                     <Founder />
                 </section>

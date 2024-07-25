@@ -8,6 +8,11 @@ import AnimatedImage6 from "../AboutUsHet/Images/Cantilever2.jpg"
 import AnimatedImage7 from "../AboutUsHet/Images/Hoarding1.jpg"
 import AnimatedImage8 from "../AboutUsHet/Images/Hoarding4.jpg"
 import { Image } from 'antd';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "./ImageGallery.css"
 const ImageGallery = () => {
     const containerRef = useRef(null);
@@ -36,29 +41,44 @@ const ImageGallery = () => {
         AnimatedImage6,
         AnimatedImage7,
         AnimatedImage8,
-        // AnimatedImage5,
-        // AnimatedImage7,
-        // AnimatedImage8,
-        // AnimatedImage9,
-        // AnimatedImage10,
-        // AnimatedImage11,
-        // AnimatedImage12,
-        // AnimatedImage13,
-        // AnimatedImage14,
-        // AnimatedImage15
     ];
     return (
         <>
-            <div className="container" style={{ width: "100%", overflow: "hidden", padding: "0rem", position: "sticky", top: "10%" }}>
-                {/* <div id="BackgroundImage">
-                        <img src={billboard} alt="" />
-                    </div> */}
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <SwiperSlide><img src={AnimatedImage1} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage2} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage3} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage4} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage5} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage6} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage7} /></SwiperSlide>
+                <SwiperSlide><img src={AnimatedImage8} /></SwiperSlide>
+
+
+            </Swiper>
+            <div className="imgcontainer container" style={{ width: "100%", overflow: "hidden", padding: "0rem", position: "sticky", top: "10%" }}>
+
                 <div className="images" ref={containerRef} style={{ transition: 'transform 0.1s' }} >
                     {images.map((src, index) => (
                         <img key={index} src={src} alt="" />
                     ))}
                 </div>
+
             </div>
+
         </>
     )
 }

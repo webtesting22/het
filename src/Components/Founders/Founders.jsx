@@ -60,8 +60,8 @@ const Founder = () => {
 
                 <section className="FounderContainer container">
                     <Row>
-                        <Col lg={12} md={24}>
-                            <h4 className="FounderTitle">Meet Our Founder</h4>
+                        <Col lg={12} md={24} className="founderTitleContainer">
+                            <h4 className="FounderTitle" >Meet Our Founder</h4>
                         </Col>
                         <Col lg={12} md={24}>
                             <div className="FoundersContainerCards">
