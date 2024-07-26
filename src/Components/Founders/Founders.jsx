@@ -60,10 +60,10 @@ const Founder = () => {
 
                 <section className="FounderContainer container">
                     <Row>
-                        <Col lg={12} md={24} className="founderTitleContainer">
+                        <Col lg={8} md={24} className="founderTitleContainer">
                             <h4 className="FounderTitle" >Meet Our Founder</h4>
                         </Col>
-                        <Col lg={12} md={24}>
+                        <Col lg={14} md={24}>
                             <div className="FoundersContainerCards">
                                 {FounderDetails.map((item, index) => (
                                     <div key={index} className="FounderCard" >
