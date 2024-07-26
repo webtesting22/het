@@ -16,7 +16,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import "./ImageGallery.css"
 const ImageGallery = () => {
     const containerRef = useRef(null);
-
+    
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
@@ -44,6 +44,7 @@ const ImageGallery = () => {
     ];
     return (
         <>
+        <div className="swiper-container">
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -54,8 +55,8 @@ const ImageGallery = () => {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                // navigation={true}
+                modules={[Autoplay,Pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide><img src={AnimatedImage1} /></SwiperSlide>
@@ -66,9 +67,10 @@ const ImageGallery = () => {
                 <SwiperSlide><img src={AnimatedImage6} /></SwiperSlide>
                 <SwiperSlide><img src={AnimatedImage7} /></SwiperSlide>
                 <SwiperSlide><img src={AnimatedImage8} /></SwiperSlide>
-
-
+               
+                
             </Swiper>
+            </div>
             <div className="imgcontainer container" style={{ width: "100%", overflow: "hidden", padding: "0rem", position: "sticky", top: "10%" }}>
 
                 <div className="images" ref={containerRef} style={{ transition: 'transform 0.1s' }} >
@@ -78,7 +80,7 @@ const ImageGallery = () => {
                 </div>
 
             </div>
-
+            
         </>
     )
 }

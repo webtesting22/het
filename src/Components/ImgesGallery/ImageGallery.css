@@ -5,13 +5,18 @@
     object-fit: contain;
   }
   
+  
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: rgb(255, 237, 0);
+}
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } 
   
   .swiper-slide img {
     display: block;
