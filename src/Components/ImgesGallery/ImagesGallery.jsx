@@ -38,9 +38,9 @@ const ImageGallery = () => {
         AnimatedImage3,
         AnimatedImage4,
         AnimatedImage5,
-        AnimatedImage6,
         AnimatedImage7,
         AnimatedImage8,
+        AnimatedImage6,
     ];
     return (
         <>
@@ -64,10 +64,10 @@ const ImageGallery = () => {
                 <SwiperSlide><img src={AnimatedImage3} /></SwiperSlide>
                 <SwiperSlide><img src={AnimatedImage4} /></SwiperSlide>
                 <SwiperSlide><img src={AnimatedImage5} /></SwiperSlide>
-                <SwiperSlide><img src={AnimatedImage6} /></SwiperSlide>
+                
                 <SwiperSlide><img src={AnimatedImage7} /></SwiperSlide>
                 <SwiperSlide><img src={AnimatedImage8} /></SwiperSlide>
-               
+                <SwiperSlide><img src={AnimatedImage6} /></SwiperSlide>
                 
             </Swiper>
             </div>
