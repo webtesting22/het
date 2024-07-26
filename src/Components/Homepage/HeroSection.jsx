@@ -4,14 +4,24 @@ import "./HeroSection.css";
 import AboutUsHet from "../AboutUsHet/AboutUsHet";
 import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
+import Image1 from "./MPC_0472.jpg"
+import Image2 from "./bg1.png"
 import Founder from "../Founders/Founders";
 import HetLogo from "../NavigationBar/HetLogo.png"
 import ImageGallery from "../ImgesGallery/ImagesGallery";
+   
+const images = [
+    Image1,Image2,
+    
+    // Add more image paths here
+  ];
 const HeroSection = () => {
+    const [currentImage, setCurrentImage] = useState(0);
+
     const [fontSize, setFontSize] = useState("4rem");
     const [isSticky, setIsSticky] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(true);
-
+    
     useEffect(() => {
         if (!isModalOpen) {
             window.location.reload(); // Reload the page when the modal is closed initially
@@ -19,6 +29,14 @@ const HeroSection = () => {
             setIsModalOpen(true); // Set isModalOpen to true after the page reloads
         }
     }, [isModalOpen]);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+        }, 5000); // Change image every 5 seconds
+
+        return () => clearInterval(intervalId);
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,6 +63,7 @@ const HeroSection = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+    
     const location = useLocation();
 
     useEffect(() => {
@@ -91,13 +110,14 @@ const HeroSection = () => {
 
 
 
-
+    
 
 
     return (
         <>
             <section id="HeroSection">
-                <div className="overlayImageContainer">
+            <div className="overlayImageContainer" style={{ backgroundImage: `url(${images[currentImage]})` }}>
+
                     <div className="blackOverlay">
 
                     </div>

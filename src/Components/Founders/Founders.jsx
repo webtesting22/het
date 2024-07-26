@@ -71,7 +71,7 @@ const Founder = () => {
                                             <h4>{item.founderTitle}</h4>
                                             <i class='bx bxl-linkedin socialIcons' ></i>
                                         </div>
-                                        <p>{truncateText(item.Descriptions[0], 30)}</p>
+                                        <p>{truncateText(item.Descriptions[0], 69)}</p>
                                         <button className="viewMoreBtn" onClick={() => showModal(item)}>
                                             Read More
                                         </button>
