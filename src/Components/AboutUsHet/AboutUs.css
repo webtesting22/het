@@ -41,6 +41,7 @@
 .images img:nth-child(14),
 .images img:nth-child(15) {
   border-radius: 20px;
+  padding: 3px;
 }
 
 @media (max-width: 769px) {
