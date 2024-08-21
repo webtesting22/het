@@ -74,7 +74,7 @@ const Founder = () => {
                                             <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank" className="LinkedInLink"><i class='bx bxl-linkedin socialIcons' ></i></a>
                                         </div>
                                         <p>{truncateText(item.Descriptions[0], 93)}</p>
-                                        <div className="buttonContainer">
+                                        <div className="buttonContainer" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                                         <button className="viewMoreBtn" onClick={() => showModal(item)}>
                                             Read More
                                         </button>
