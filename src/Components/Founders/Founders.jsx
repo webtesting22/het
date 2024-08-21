@@ -61,21 +61,24 @@ const Founder = () => {
                 <section className="FounderContainer container">
                     <Row>
                         <Col lg={8} md={24} className="founderTitleContainer">
-                            <h4 className="FounderTitle" >Meet Our Founder</h4>
+                        {/* <h4 className="FounderTitle">Meet Our Founder</h4> */}
+                          <p className="FounderTitle">Meet Our Founder</p>  
                         </Col>
-                        <Col lg={14} md={24}>
+
+                        <Col lg={16} md={24}>
                             <div className="FoundersContainerCards">
                                 {FounderDetails.map((item, index) => (
                                     <div key={index} className="FounderCard" >
-                                        <div style={{ display: "flex", justifyContent: "space-between",alignItems:"center" }}>
+                                        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                             <h4>{item.founderTitle}</h4>
-                                            <i class='bx bxl-linkedin socialIcons' ></i>
+                                            <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank" className="LinkedInLink"><i class='bx bxl-linkedin socialIcons' ></i></a>
                                         </div>
-                                        <p>{truncateText(item.Descriptions[0], 69)}</p>
+                                        <p>{truncateText(item.Descriptions[0], 93)}</p>
+                                        <div className="buttonContainer">
                                         <button className="viewMoreBtn" onClick={() => showModal(item)}>
                                             Read More
                                         </button>
-
+                                    </div>
                                     </div>
                                 ))}
                             </div>

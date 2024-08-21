@@ -9,31 +9,31 @@ import Image2 from "./bg1.png"
 import Founder from "../Founders/Founders";
 import HetLogo from "../NavigationBar/HetLogo.png"
 import ImageGallery from "../ImgesGallery/ImagesGallery";
-   
+import { motion, useScroll } from "framer-motion"
+
 const images = [
-    Image1,Image2,
-    
-    // Add more image paths here
-  ];
+    Image1, Image2,
+];
 const HeroSection = () => {
+    
     const [currentImage, setCurrentImage] = useState(0);
 
     const [fontSize, setFontSize] = useState("4rem");
     const [isSticky, setIsSticky] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(true);
-    
+
     useEffect(() => {
         if (!isModalOpen) {
-            window.location.reload(); // Reload the page when the modal is closed initially
+            window.location.reload(); 
         } else {
-            setIsModalOpen(true); // Set isModalOpen to true after the page reloads
+            setIsModalOpen(true); 
         }
     }, [isModalOpen]);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-        }, 5000); // Change image every 5 seconds
+        }, 5000); 
 
         return () => clearInterval(intervalId);
     }, []);
@@ -63,7 +63,7 @@ const HeroSection = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
-    
+
     const location = useLocation();
 
     useEffect(() => {
@@ -73,7 +73,7 @@ const HeroSection = () => {
                 const sectionElement = document.getElementById(sectionId);
                 if (sectionElement) {
                     setTimeout(() => {
-                        sectionElement.scrollIntoView({ behavior:'smooth' });
+                        sectionElement.scrollIntoView({ behavior: 'smooth' });
                     }, 1000); // Slightly longer delay to ensure the component is fully rendered
                 }
             }
@@ -110,13 +110,14 @@ const HeroSection = () => {
 
 
 
-    
+
 
 
     return (
         <>
-            <section id="HeroSection">
-            <div className="overlayImageContainer" style={{ backgroundImage: `url(${images[currentImage]})` }}>
+            <section id="HeroSection" >
+               
+                <div className="overlayImageContainer" style={{ backgroundImage: `url(${images[currentImage]})` }}>
 
                     <div className="blackOverlay">
 
@@ -124,17 +125,18 @@ const HeroSection = () => {
                     <img src={HetLogo} alt="" className="homeScreenLogo" />
                 </div>
                 <div className={`MainTitle ${isSticky ? 'sticky' : ''}`}>
-                    <img src={HetLogo}  alt="" className="HetLogoopacity" />
-                    <h1 style={{ fontSize, paddingTop: "13px", paddingBottom: "13px", letterSpacing: "1px" }} className="mainTitleHeading">HET GRAPHICS</h1>
+                    <img src={HetLogo} alt="" className="HetLogoopacity" />
+                    <h1 style={{ fontSize, }} className="mainTitleHeading">HET GRAPHICS</h1>
 
                 </div>
 
                 <section className="AboutUsContainer" id="AboutUsContainer">
                     <AboutUsHet />
                 </section>
-                <section className={isSticky ? 'sticky-section' : 'normal-section'}>
+                <section className={isSticky ? 'sticky-section' : 'normal-section'} id="ImageGallery">
+              
                     <ImageGallery />
-                    
+
                 </section>
 
                 <hr style={{ border: "1px solid #ffed00", opacity: "1", marginBottom: "0rem" }} />

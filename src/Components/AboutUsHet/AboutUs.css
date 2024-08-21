@@ -1,13 +1,9 @@
-.aboutUsContainer p {
-  font-size: 1.125rem;
-  /* font-family: sans-serif; */
-}
 .images {
   display: flex;
 }
 
 .images img {
-  width: 50%;
+  /* width: 100%; */
   height: 400px;
   margin: 20px 20px;
   border: 2px solid #ffed00;
@@ -75,46 +71,60 @@
   justify-content: center;
 }
 
-.BtnContainer .BtnStyle {
+#BtnContainer .BtnStyle {
   background-color: #ffed00;
-  border: 2px solid black;
-  
+  /* border: 2px solid black; */
+  border: none;
   color: black;
   text-shadow: 0 0 30px #ffed00;
 }
 
-.BtnContainer .BtnStyle:hover {
+#BtnContainer .BtnStyle:hover {
   /* background-color: black; */
   background-color: #ffed00;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   color: black;
   /* box-shadow: 0 0 10px #ffed00; */
   transform: scale(1.15);
-  transition: 0.5s ;
+  transition: 0.5s;
+  /* cursor: pointer; */
 }
 
 @media (min-width: 1300px) and (max-width: 3000px) {
   .aboutUsContainer {
     display: flex;
     justify-content: center;
+    /* overflow: hidden; */
     flex-direction: column;
     /* background: linear-gradient(to right, #2c3e50, #34495e); */
     /* background: linear-gradient(to right, #ffed00, black 10%, black 90%, #ffed00 100%); */
     /* background: linear-gradient(to right, rgba(255, 237, 0, 0.7)0%, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.7) 90%, rgba(255, 237, 0, 0.7) 100%); */
-    background: linear-gradient(
+    /* background: linear-gradient(
       to right,
       rgba(255, 237, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.3) 30%,
       rgba(0, 0, 0, 0.3) 70%,
       rgba(255, 237, 0, 0.3) 100%
     );
+    background-size: 500% auto;
+      animation:alternate textShine 7s infinite; */
+  }
+  @keyframes textShine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
   }
 
   .aboutUsContainer p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     /* color: rgb(0, 0, 0); */
     /* text-align: center; */
     width: 85%;
+    /* color: #ffed00; */
+    /* padding-top: 1rem; */
     /* padding-bottom: 1rem; */
     margin: 10px auto;
     /* font-family: sans-serif; */
@@ -126,25 +136,13 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* background: linear-gradient(to right, #ffed00, black 10%, black 90%, #ffed00 100%); */
-    /* background: linear-gradient(to right, rgba(255, 237, 0, 0.7)0%, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.7) 90%, rgba(255, 237, 0, 0.7) 100%); */
-    background: linear-gradient(
-      to right,
-      rgba(255, 237, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 30%,
-      rgba(0, 0, 0, 0.3) 70%,
-      rgba(255, 237, 0, 0.3) 100%
-    );
-    /* background: linear-gradient(to right, #2c3e50, #34495e); */
+   
   }
   .aboutUsContainer p {
     font-size: 1.125rem;
-    /* color: rgb(0, 0, 0); */
-    /* text-align: center; */
-    /* width: 85%; */
-    /* padding-bottom: 1rem; */
-    /* margin: 10px auto; */
-    /* font-family: sans-serif; */
+    overflow-x: hidden;
+    line-height: 1.4;
+   
   }
 }
 @media (max-width: 700px) {
@@ -154,37 +152,29 @@
 }
 .ParaBackEdit {
   /* background-color: #ffed00; */
+  border-bottom: 2px solid #ffed00;
+  padding: 2rem 0rem;
   
-  padding: 1.5rem 0rem;
-  /* border-radius: 50px; */
-  /* margin: auto; */
-  /* width: 70% */
-  /* height: 15vh; */
 }
 @media (max-width: 750px) {
   .ParaBackEdit {
     width: 100%;
-    
   }
 }
 .ParaBackEdit p {
-  /* color: black; */
+  
   color: #ffed00;
+  font-size: 3.5rem;
   
-  font-size: 4rem;
-  /* text-shadow: 0 0 10px #ffed00, 0 0 20px black, 0 0 30px #ffed00; */
   text-align: center;
-  
 }
 
 #BackgroundImage {
-  /* background-color: red; */
+  
   position: absolute;
   right: 0px;
   left: 0px;
   top: 0px;
-  /* height: 100vh; */
-  /* height: 100vh; */
   width: 100%;
 }
 
@@ -196,6 +186,45 @@
   width: 100%;
   opacity: 0.2;
 }
-.ParaBackEdit{
-    backdrop-filter: blur(100px);
+
+.yellowSpotLink {
+  font-size: 3.5rem;
+  padding: 3px 17px;
+  
+  display: inline;
+  border: 1px solid #ffed00;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+
+    #fcffe6 10%,
+    #f9ffa3 20%,
+    #fbff7a 30%,
+    #ffff52 40%,
+    #fff829 50%,
+    #ffed00 60%,
+    #d9c300 70%,
+    #b39b00 80%,
+    #8c7500 90%,
+    #665200 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-fill-color: transparent; */
+  background-size: 500% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.about {
+  border-top: 2px solid #ffed00;
+  /* border-bottom: 2px solid #ffed00; */
 }

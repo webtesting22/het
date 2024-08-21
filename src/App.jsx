@@ -3,12 +3,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from './Components/NavigationBar/Navigation';
 import HeroSection from './Components/Homepage/HeroSection';
 import Footer from './Components/Footer/Footer';
+import {motion,useScroll} from "framer-motion"
+
 function App() {
 
   return (
     <>
       <BrowserRouter>
         <div>
+       
           <Navigation />
           <Routes>
             <Route path='/' element={<HeroSection />}></Route>
