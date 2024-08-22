@@ -52,7 +52,7 @@
     margin: 10px;
 }
 #Navigationbtn .BtnStyle:hover{
-    font-size:13px;
+    font: size 1.3rem;
     padding: 8px 17px;
     background-color: #ffed00;
     border: none;

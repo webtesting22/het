@@ -142,4 +142,9 @@
     justify-content: center;
     margin: 20px 0px;
   }
+  .SocialIcons > div div i {
+    /* rotate: -45deg; */
+    transition: 0.5s;
+    font-size: 2rem;
+  }
 }

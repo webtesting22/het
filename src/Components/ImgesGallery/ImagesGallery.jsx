@@ -3,10 +3,12 @@ import AnimatedImage1 from "../AboutUsHet/Images/Gantry1.jpg"
 import AnimatedImage2 from "../AboutUsHet/Images/Gantry3.jpg"
 import AnimatedImage3 from "../AboutUsHet/Images/Gantry5.jpg"
 import AnimatedImage4 from "../AboutUsHet/Images/Gantry6.jpg"
+import AnimatedImage41 from "../AboutUsHet/Images/Gantry61.jpg"
 import AnimatedImage5 from "../AboutUsHet/Images/Unipole2.jpg"
 import AnimatedImage6 from "../AboutUsHet/Images/Cantilever2.jpg"
 import AnimatedImage7 from "../AboutUsHet/Images/Hoarding1.jpg"
 import AnimatedImage8 from "../AboutUsHet/Images/Hoarding4.jpg"
+import AnimatedImage81 from "../AboutUsHet/Images/Hoarding41.jpg";
 import { Image } from 'antd';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -132,7 +134,7 @@ const ImageGallery = () => {
                         <p className="swiper-text">Eye-Level Visibility</p>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={AnimatedImage4} />
+                        <img src={AnimatedImage41} />
                         <p className="swiper-text">Innovative Designs</p>
                     </SwiperSlide>
                     <SwiperSlide>
@@ -140,7 +142,7 @@ const ImageGallery = () => {
                         <p className="swiper-text">High Traffic Areas</p>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={AnimatedImage8} />
+                        <img src={AnimatedImage81} />
                         <p className="swiper-text">Backlit Media</p>
                     </SwiperSlide>
                     <SwiperSlide>

@@ -181,7 +181,7 @@
     font-size: 1.125rem;
     overflow-x: hidden;
     line-height: 1.4;
-   
+    margin: 10px auto;
   }
   .yellowSpotLink {
   font-size: 3.5rem;
