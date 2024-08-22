@@ -53,9 +53,9 @@ const AboutUsHet = () => {
                     <div className="ParaBackEdit " style={{ position: "relative" }}>
                         {/* <img src={hoarding} style={{    position: "absolute",opacity:"0.1",bottom:"0",width:"150px"}}/> */}
                         <div className="container">
-                            <p data-aos="fade-up" data-aos-duration="1000">Find out more about us on: <div style={{ display: "inline-block", margin: "0" }}><a href="https://yellow-spot.vercel.app/" target="_blank" className="yellowSpotLink">YellowSpot</a></div>
+                            <p data-aos="fade-up" data-aos-duration="1000" className="firstPara">Find out more about us on: <div style={{ display: "inline-block", margin: "0" }}><a href="https://yellow-spot.vercel.app/" target="_blank" className="yellowSpotLink">YellowSpot</a></div>
                             </p>
-                            <p data-aos="fade-up" data-aos-duration="1000" style={{ fontSize: "2.5rem" }}>And book your first inventory now!</p>
+                            <p data-aos="fade-up" data-aos-duration="1000" className="secondPara">And book your first inventory now!</p>
                         </div>
 
                     </div>

@@ -91,6 +91,35 @@
 }
 
 @media (min-width: 1300px) and (max-width: 3000px) {
+  .yellowSpotLink {
+    font-size: 3.5rem;
+    padding: 3px 17px;
+    
+    display: inline;
+    border: 1px solid #ffed00;
+    border-radius: 50px;
+    background: linear-gradient(
+      to right,
+  
+      #fcffe6 10%,
+      #f9ffa3 20%,
+      #fbff7a 30%,
+      #ffff52 40%,
+      #fff829 50%,
+      #ffed00 60%,
+      #d9c300 70%,
+      #b39b00 80%,
+      #8c7500 90%,
+      #665200 100%
+    );
+  
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+    background-size: 500% auto;
+    animation: textShine 7s ease-in-out infinite alternate;
+  }
   .aboutUsContainer {
     display: flex;
     justify-content: center;
@@ -129,6 +158,16 @@
     margin: 10px auto;
     /* font-family: sans-serif; */
   }
+  .ParaBackEdit .firstPara{
+    color: #ffed00;
+    font-size: 3.5rem;  
+    text-align: center;
+   }
+   .ParaBackEdit .secondPara {
+    color: #ffed00;
+    font-size: 3.5rem;
+    text-align: center;
+   }
 }
 
 @media (min-width: 400px) and (max-width: 1299px) {
@@ -144,50 +183,7 @@
     line-height: 1.4;
    
   }
-}
-@media (max-width: 700px) {
-  .aboutUsContainer {
-    background: none;
-  }
-}
-.ParaBackEdit {
-  /* background-color: #ffed00; */
-  border-bottom: 2px solid #ffed00;
-  padding: 2rem 0rem;
-  
-}
-@media (max-width: 750px) {
-  .ParaBackEdit {
-    width: 100%;
-  }
-}
-.ParaBackEdit p {
-  
-  color: #ffed00;
-  font-size: 3.5rem;
-  
-  text-align: center;
-}
-
-#BackgroundImage {
-  
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-}
-
-#BackgroundImage img {
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  /* height: 100%; */
-  width: 100%;
-  opacity: 0.2;
-}
-
-.yellowSpotLink {
+  .yellowSpotLink {
   font-size: 3.5rem;
   padding: 3px 17px;
   
@@ -216,6 +212,62 @@
   background-size: 500% auto;
   animation: textShine 7s ease-in-out infinite alternate;
 }
+  .ParaBackEdit .firstPara{
+    color: #ffed00;
+    font-size: 2rem;  
+    text-align: center;
+   }
+   .yellowSpotLink{
+    font-size: 2rem;
+   }
+   .ParaBackEdit .secondPara{
+    color: #ffed00;
+    font-size: 1.5rem;  
+    text-align: center;
+   }
+}
+@media (max-width: 700px) {
+  .aboutUsContainer {
+    background: none;
+  }
+  
+}
+.ParaBackEdit {
+  
+  border-bottom: 2px solid #ffed00;
+  padding: 2rem 0rem;
+}
+@media (max-width: 750px) {
+  .ParaBackEdit {
+    width: 100%;
+  }
+  
+  
+}
+@media(max-width:1700px){
+  
+  
+}
+
+#BackgroundImage {
+  
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+#BackgroundImage img {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  /* height: 100%; */
+  width: 100%;
+  opacity: 0.2;
+}
+
+
 @keyframes textShine {
   0% {
     background-position: 0% 50%;
@@ -226,5 +278,5 @@
 }
 .about {
   border-top: 2px solid #ffed00;
-  /* border-bottom: 2px solid #ffed00; */
+  
 }

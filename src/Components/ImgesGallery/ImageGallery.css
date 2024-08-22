@@ -7,6 +7,7 @@
 
 .swiper-pagination-bullet {
   background: rgb(255, 237, 0);
+  margin: 15px 10px;
   opacity: 0.3;
 }
 .swiper-pagination-bullet-active {
@@ -150,4 +151,24 @@ circle {
   background-size: 500% auto;
   animation: textShine 7s ease-in-out infinite alternate;
   margin:10px 0 !important;
+}
+.SwiperSlide p{
+  color: #ffed00;
+}
+.swiper-container {
+  position: relative;
+}
+
+.mySwiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-text {
+  margin-top: 10px; /* Adjust the space between the image and the text */
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #ffed00; /* You can customize this to match your design */
 }

@@ -99,7 +99,7 @@ const ImageGallery = () => {
         link: image,
         text: imageText[index]?.text,
     }));
-    
+
     return (
         <>
 
@@ -119,15 +119,38 @@ const ImageGallery = () => {
                     modules={[Autoplay, Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide><img src={AnimatedImage1} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage2} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage3} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage4} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage5} /></SwiperSlide>
-
-                    <SwiperSlide><img src={AnimatedImage7} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage8} /></SwiperSlide>
-                    <SwiperSlide><img src={AnimatedImage6} /></SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage1} />
+                        <p className="swiper-text">Bigger And Better</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage2} />
+                        <p className="swiper-text">Road-Center Placement</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage3} />
+                        <p className="swiper-text">Eye-Level Visibility</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage4} />
+                        <p className="swiper-text">Innovative Designs</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage5} />
+                        <p className="swiper-text">High Traffic Areas</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage8} />
+                        <p className="swiper-text">Backlit Media</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage7} />
+                        <p className="swiper-text">Prime Locations Only</p>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={AnimatedImage6} />
+                        <p className="swiper-text">Entire City Coverage</p>
+                    </SwiperSlide>
 
                 </Swiper>
             </div>

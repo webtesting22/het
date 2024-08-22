@@ -58,13 +58,14 @@
 }
 
 .SocialIcons > div div i {
-  rotate: -45deg;
+  /* rotate: -45deg; */
   transition: 0.5s;
+  font-size: 3rem;
 }
 
 .SocialIcons > div div:hover i {
-  rotate: -45deg;
-  transform: translateX(5px);
+  /* rotate: -45deg; */
+  /* transform: translateX(5px); */
   transition: 0.5s;
   color: #ffed00;
 }

@@ -4,15 +4,18 @@ import "./HeroSection.css";
 import AboutUsHet from "../AboutUsHet/AboutUsHet";
 import Inventories from "../InventoriesProducts/Inventories";
 import { Button, Modal } from 'antd';
-import Image1 from "./MPC_0472.jpg"
-import Image2 from "./bg1.png"
+// import Image1 from "./MPC_0472.jpg"
+// import Image2 from "./bg1.png"
+import Image1 from "./BGfirst.jpg";
+// import Image2 from "./BG2.jpg";
+import Image3 from "../Homepage/BG31.jpg";
 import Founder from "../Founders/Founders";
 import HetLogo from "../NavigationBar/HetLogo.png"
 import ImageGallery from "../ImgesGallery/ImagesGallery";
 import { motion, useScroll } from "framer-motion"
 
 const images = [
-    Image1, Image2,
+    Image1,Image3,
 ];
 const HeroSection = () => {
     
